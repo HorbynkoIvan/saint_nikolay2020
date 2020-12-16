@@ -6,7 +6,7 @@
 .btn_type1 {
   font-size: 24px;
   line-height: 1;
-  color: $black;
+  color: $white;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -14,15 +14,13 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
-
-  background: linear-gradient(89.86deg, $primary1 0.1%, $primary2 99.88%);
+  border: 2px solid $white;
   border-radius: 30px;
 
   transition: all 0.3s ease;
 
   &:hover, &:active {
-    background: linear-gradient(89.86deg, #00FFF0 0.1%, #FB5ECF 99.88%);
-    box-shadow: 0px 0px 15px 0px $primary2;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.6);
   }
 }
 
