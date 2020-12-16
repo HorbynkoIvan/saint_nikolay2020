@@ -1,23 +1,25 @@
 .brands {
-  padding-top: 70px;
+  background: $primary1;
+  padding-top: 87px;
+  padding-bottom: 46px;
 
   .brands_wrapper {
     .brands_top {
       .brands_title {
         font-family: $font-medium !important;
-        font-size: 36px;
-        line-height: 36px;
+        font-size: 45px;
+        line-height: 54px;
         text-align: center;
-        color: $white;
+        color: $primary3;
       }
 
       .brands_subtitle {
-        font-family: $font-medium !important;
-        font-size: 24px;
-        line-height: 24px;
+        font-family: $font-main !important;
+        font-size: 30px;
+        line-height: 36px;
         text-align: center;
-        color: $primary1;
-        margin-top: 15px;
+        color: $white;
+        margin-top: 3px;
         margin-bottom: 34px;
       }
     }
