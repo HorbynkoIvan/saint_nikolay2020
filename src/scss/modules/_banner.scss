@@ -1,7 +1,7 @@
 .banner{
   max-width: 1600px;
   margin: 0 auto;
-  a {
+  .inner {
     display: block;
     height: 224px;
     width: 100%;
@@ -12,7 +12,7 @@
 @media only screen and (max-width: 1024px) {
   .banner{
     background: $primary1;
-    a {
+    .inner {
       display: block;
       height: 187px;
       width: 100%;
@@ -25,7 +25,7 @@
 @media only screen and (max-width: 960px) {
   .banner{
     background: $primary1;
-    a {
+    .inner {
       display: block;
       height: 187px;
       width: 100%;
@@ -37,7 +37,7 @@
 
 @media only screen and (max-width: 767px) {
   .banner{
-    a {
+    .inner {
       margin: 0 auto;
       border-radius: 8px;
       display: block;
