@@ -30,13 +30,13 @@ window.addEventListener('DOMContentLoaded', () => {
             arrows: true,
             infinite: false,
             slidesToShow: 4,
-            slidesToScroll: 4,
+            slidesToScroll: 1,
             responsive: [
                 {
                     breakpoint: 768,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 2,
+                        slidesToScroll: 1,
                         arrows: false
                     }
                 },
