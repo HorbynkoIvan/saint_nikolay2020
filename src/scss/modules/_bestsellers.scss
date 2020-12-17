@@ -156,10 +156,6 @@
       font-size: 20px;
       line-height: 24px;
     }
-    &__slider {
-      max-width: 320px;
-      margin: 0 auto 30px;
-    }
 
     .slick-arrow {
       top: 140px;
@@ -202,6 +198,10 @@
       height: 48px;
       font-size: 18px;
       line-height: 18px;
+    }
+    &__slider {
+      max-width: 320px;
+      margin: 0 auto 30px;
     }
 
     .slick-dots li {
