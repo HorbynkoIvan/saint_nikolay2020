@@ -424,7 +424,8 @@
     }
 
     .showcase_bottom {
-      background: linear-gradient(180deg, #8A0C1D 6.7%, #FF5862 93.3%), #01827E;
+      background: url("/assets/img/apple/Apple_Watch_BG.png") center top no-repeat;
+      background-size: cover;
       padding: 43px 0 55px;
       height: 650px;
 
