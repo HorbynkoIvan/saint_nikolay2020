@@ -139,6 +139,10 @@
         line-height: 1;
         color: $primary3;
         cursor: pointer;
+        transition: color 0.3s;
+        &:hover{
+          color: $white;
+        }
       }
     }
   }
