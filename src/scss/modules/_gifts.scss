@@ -31,6 +31,11 @@
       align-items: center;
       flex: 0 0 calc(100% / 4 - 40px);
 
+      .gift_link {
+        text-decoration: none;
+        cursor: pointer;
+      }
+
       .gifts_item_img {
         position: relative;
         height: 331px;
@@ -43,6 +48,12 @@
 
           img {
             max-width: 100%;
+          }
+
+          &.mistletoe {
+            img {
+              transform: scale(1.2) translateY(-20px);
+            }
           }
         }
       }
@@ -92,6 +103,7 @@
 
         &:hover, &:active {
           background: url("/assets/img/gift_btn_hover.svg") top center no-repeat;
+          background-size: cover;
 
           span {
             text-decoration: underline;
@@ -200,59 +212,61 @@
         }
       }
     }
-  }
 
-  .gifts_btn_list_mob {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 286px;
-    margin: 0 auto;
-
-
-    .list_item {
+    .gifts_btn_list_mob {
       display: flex;
-      flex: 0 0 calc(100% / 2 - 10px);
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 286px;
+      margin: 0 auto;
 
-      .gifts_btn {
-        margin-top: 15px;
-        display: block;
-        text-decoration: none;
-        cursor: pointer;
 
-        width: 135px;
-        height: 45px;
-        background: url("/assets/img/gift_btn_mob.svg") top center no-repeat;
-        background-size: cover;
-        text-decoration: inherit;
-        border: none;
-        outline: none;
-
-        position: relative;
-        overflow: hidden;
-
+      .list_item {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        flex: 0 0 calc(100% / 2 - 10px);
 
-        transition: all 0.3s ease;
+        .gifts_btn {
+          margin-top: 15px;
+          display: block;
+          text-decoration: none;
+          cursor: pointer;
 
-        span {
-          font-family: $font-medium !important;
-          font-size: 18px;
-          line-height: 20px;
-          color: #000000;
-        }
+          width: 135px;
+          height: 45px;
+          background: url("/assets/img/gift_btn_mob.svg") top center no-repeat;
+          background-size: cover;
+          text-decoration: inherit;
+          border: none;
+          outline: none;
 
-        &:hover, &:active {
-          background: url("/assets/img/gift_btn_hover_mob.svg") top center no-repeat;
+          position: relative;
+          overflow: hidden;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+
+          transition: all 0.3s ease;
 
           span {
-            text-decoration: underline;
+            font-family: $font-medium !important;
+            font-size: 18px;
+            line-height: 20px;
+            color: #000000;
+          }
+
+          &:hover, &:active {
+            background: url("/assets/img/gift_btn_hover_mob.svg") top center no-repeat;
+
+            span {
+              text-decoration: underline;
+            }
           }
         }
       }
     }
   }
+
+
 }
