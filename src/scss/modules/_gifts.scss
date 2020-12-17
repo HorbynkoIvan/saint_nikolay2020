@@ -29,12 +29,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      flex-basis: 320px;
-
-      &:not(:last-child) {
-        //margin-right: 1.8%;
-        margin-right: 30px;
-      }
+      flex: 0 0 calc(100% / 4 - 40px);
 
       .gifts_item_img {
         position: relative;
@@ -45,6 +40,10 @@
         .img_main {
           position: relative;
           z-index: 1;
+
+          img {
+            max-width: 100%;
+          }
         }
       }
 
@@ -84,16 +83,17 @@
 
         transition: all 0.3s ease;
 
-        span{
+        span {
           font-family: $font-medium !important;
           font-size: 24px;
-          line-height:26px;
+          line-height: 26px;
           color: #000000;
         }
 
         &:hover, &:active {
           background: url("/assets/img/gift_btn_hover.svg") top center no-repeat;
-          span{
+
+          span {
             text-decoration: underline;
           }
         }
@@ -101,28 +101,8 @@
     }
   }
 
-  .promo {
-    background: $primary4;
-    border-radius: 8px;
-    padding: 40px 56px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 50px 0 30px;
-
-    .promo_text {
-      font-size: 24px;
-      line-height: 29px;
-      color: $white;
-
-      .text1 {
-        font-weight: bold;
-      }
-    }
-
-    .btn_type1 {
-      font-family: $font-medium !important;
-    }
+  .gifts_btn_list_mob {
+    display: none;
   }
 }
 
@@ -139,7 +119,10 @@
       justify-content: space-between;
 
       .gifts_item {
-        width: 33.333%;
+
+        .gifts_item_img {
+          height: 232px;
+        }
 
         h3 {
           font-size: 20px;
@@ -147,42 +130,16 @@
           min-height: 50px;
         }
 
-        .gifts_item_text {
-          font-size: 14px;
-          line-height: 17px;
-          text-align: center;
-        }
-      }
-    }
+        .gifts_btn {
+          margin-top: 52px;
 
-    .promo {
-      padding: 25px 40px;
-      margin: 50px 0 30px;
+          width: 163px;
+          height: 62px;
 
-      .promo_text {
-        font-size: 18px;
-        line-height: 22px;
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 960px) {
-  .gifts {
-
-    .gifts_title {
-    }
-
-    .gifts_list {
-
-      .gifts_item {
-
-        h3 {
-          min-height: 72px;
-        }
-
-        .gifts_item_text {
-
+          span {
+            font-size: 20px;
+            line-height: 22px;
+          }
         }
       }
     }
@@ -196,52 +153,105 @@
       font-size: 20px;
       line-height: 24px;
       text-align: center;
-      color: $white;
       margin: 0 0 25px 0;
+      font-weight: bold;
+    }
+
+    .gifts_subtitle {
+      font-size: 18px;
+      line-height: 22px;
     }
 
     .gifts_list {
-      display: block;
+      flex-wrap: wrap;
       max-width: 286px;
       margin: 0 auto;
 
       .gifts_item {
+        margin-top: 14px;
+        flex: 0 0 calc(100% / 2 - 18px);
 
         .gifts_item_img {
+          position: relative;
+          height: 160px;
+          display: flex;
+          align-items: flex-end;
+
+          .img_main {
+            position: relative;
+            z-index: 1;
+
+            img {
+              max-width: 100%;
+            }
+          }
         }
 
         h3 {
           font-size: 18px;
-          line-height: 22px;
+          line-height: 20px;
+          text-align: center;
           min-height: 60px;
-          margin-top: 10px;
+          margin-top: 15px;
         }
 
-        .gifts_item_text {
-          font-size: 14px;
-          line-height: 17px;
-          text-align: center;
-          margin-top: 20px;
+        .gifts_btn {
+          display: none;
         }
       }
     }
+  }
 
-    .promo {
-      padding: 20px;
-      flex-direction: column;
-      margin: 30px 0;
+  .gifts_btn_list_mob {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 286px;
+    margin: 0 auto;
 
-      .promo_text {
-        font-size: 20px;
-        line-height: 24px;
-        text-align: center;
-      }
 
-      .promo_btn {
-        width: 100%;
-        margin-top: 20px;
+    .list_item {
+      display: flex;
+      flex: 0 0 calc(100% / 2 - 10px);
+
+      .gifts_btn {
+        margin-top: 15px;
+        display: block;
+        text-decoration: none;
+        cursor: pointer;
+
+        width: 135px;
+        height: 45px;
+        background: url("/assets/img/gift_btn_mob.svg") top center no-repeat;
+        background-size: cover;
+        text-decoration: inherit;
+        border: none;
+        outline: none;
+
+        position: relative;
+        overflow: hidden;
+
         display: flex;
         justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        transition: all 0.3s ease;
+
+        span {
+          font-family: $font-medium !important;
+          font-size: 18px;
+          line-height: 20px;
+          color: #000000;
+        }
+
+        &:hover, &:active {
+          background: url("/assets/img/gift_btn_hover_mob.svg") top center no-repeat;
+
+          span {
+            text-decoration: underline;
+          }
+        }
       }
     }
   }
