@@ -1,8 +1,8 @@
 .showcase {
 
   .showcase_top {
-    background: radial-gradient(55.39% 55.39% at 50% 38.06%, #F0273C 0%, #8A0C1D 100%);
-    mix-blend-mode: normal;
+    background: url("/assets/img/showcase_top_bg_ua.jpg") center top no-repeat;
+    background-size: cover;
     position: relative;
     overflow: hidden;
     height: 670px;
@@ -37,9 +37,13 @@
         z-index: 1;
 
         .miracle {
+          display: none;
           margin-top: 138px;
         }
 
+        .percent {
+          margin-top: 291px;
+        }
         .text1 {
           font-family: $font-medium !important;
           font-size: 120px;
@@ -56,7 +60,7 @@
         }
 
         .showcase_btn {
-          margin-top: 100px;
+          margin-top: 120px;
         }
       }
     }
@@ -224,37 +228,39 @@
   .showcase {
 
     .showcase_top {
+      background-position: 46%;
       height: 504px;
 
-      .showcase_sphera {
-        display: none;
-      }
+      //.showcase_sphera {
+      //  display: none;
+      //}
+      //
+      //.showcase_sphera_tab {
+      //  display: block;
+      //  position: absolute;
+      //  top: 0;
+      //  right: 0px;
+      //  z-index: 1;
+      //}
 
-      .showcase_sphera_tab {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0px;
-        z-index: 1;
-      }
-
-      .showcase_decor {
-        height: 149px;
-      }
+      //.showcase_decor {
+      //  height: 149px;
+      //}
 
       .top_wrapper {
         .top_left {
           margin-left: 0px;
 
-          .miracle {
-            margin-top: 70px;
-
-            img {
-              max-width: 365px;
-            }
-          }
+          //.miracle {
+          //  margin-top: 70px;
+          //
+          //  img {
+          //    max-width: 365px;
+          //  }
+          //}
 
           .percent {
+            margin-top: 210px;
             img {
               max-width: 266px;
             }
@@ -271,7 +277,7 @@
           }
 
           .showcase_btn {
-            margin-top: 80px;
+            margin-top: 85px;
           }
         }
       }
@@ -327,7 +333,7 @@
 
       .top_wrapper {
         .top_left {
-          margin-left: 60px;
+          //margin-left: 60px;
         }
       }
 
@@ -339,7 +345,8 @@
   .showcase {
 
     .showcase_top {
-      height: 590px;
+      background: url("/assets/img/showcase_top_bg_mob.jpg") center top no-repeat;
+      height: 580px;
 
       .showcase_sphera {
         position: absolute;
@@ -370,18 +377,21 @@
         margin: 0 auto;
 
         .top_left {
-          margin-left: 0;
+          max-width: 286px;
+          margin: 0 auto;
 
           .miracle {
+            display: block;
             margin-top: 32px;
 
             img {
               max-width: 286px;
+              margin: 0 auto;
             }
           }
 
           .percent {
-
+            margin-top: -20px;
             img {
               max-width: 200px;
             }
