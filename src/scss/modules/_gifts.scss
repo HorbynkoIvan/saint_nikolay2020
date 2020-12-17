@@ -35,6 +35,12 @@
         text-decoration: none;
         cursor: pointer;
         display: block;
+        transition: all 0.3s;
+        &:hover{
+          h3{
+            color: $primary3;
+          }
+        }
       }
 
       .gifts_item_img {
