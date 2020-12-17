@@ -1,0 +1,167 @@
+.promo {
+  margin-bottom: 100px;
+
+  &__title {
+    font-size: 45px;
+    line-height: 54px;
+    text-align: center;
+    color: $primary9;
+    margin-bottom: 7px;
+  }
+
+  &__subtitle {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: $primary10;
+    margin-bottom: 36px;
+  }
+
+  &__content {
+    column-count: 2;
+  }
+}
+
+.promo-cart {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  margin-bottom: 14px;
+
+  &--1 {
+    background: url("/assets/img/promo/makeup.png") no-repeat;
+    background-size: cover;
+  }
+
+  &--2 {
+    background: url("/assets/img/promo/sets.png") no-repeat;
+    background-size: cover;
+  }
+
+  &--3 {
+    background: url("/assets/img/promo/hands-lips.png") no-repeat;
+    background-size: cover;
+  }
+
+  &--4 {
+    background: url("/assets/img/promo/hair.png") no-repeat;
+    background-size: cover;
+  }
+
+  &--5 {
+    background: url("/assets/img/promo/parfums.png") no-repeat;
+    background-size: cover;
+  }
+
+  &--6 {
+    background: url("/assets/img/promo/aromas.png") no-repeat;
+    background-size: cover;
+  }
+
+  &--big {
+    height: 357px;
+    padding: 55px 30px;
+  }
+
+  &--small {
+    height: 200px;
+    padding: 11px 30px;
+  }
+
+  &__title {
+    max-width: 300px;
+    font-size: 30px;
+    line-height: 36px;
+    color: $white;
+    margin-bottom: 8px;
+  }
+
+  &__sale {
+    position: relative;
+    font-size: 48px;
+    line-height: 48px;
+    color: $white;
+  }
+
+  &__sub-text {
+    position: absolute;
+    top: 6px;
+    left: 3px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    color: $white;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .promo {
+    margin-bottom: 35px;
+
+    &__title {
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  .promo-cart {
+    &--big {
+      height: 250px;
+      padding: 20px 10px;
+    }
+
+    &--small {
+      height: 140px;
+      padding: 12px;
+    }
+    &__title {
+      max-width: 200px;
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .promo {
+    margin-bottom: 35px;
+
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 4px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 35px;
+    }
+    &__content {
+      column-count: 1;
+    }
+  }
+  .promo-cart {
+    margin-bottom: 10px;
+    &--big {
+      height: 230px;
+      padding: 20px 17px;
+    }
+
+    &--small {
+      height: 130px;
+      padding: 10px 17px;
+    }
+    &__title {
+      max-width: 185px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
