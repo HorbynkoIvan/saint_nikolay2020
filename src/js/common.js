@@ -24,6 +24,10 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     }
 
+    $('.banner .inner').click(function(){
+        window.location.href='https://parfums.ua/promotions/dostavka-krasoti';
+    });
+
     $('.js-bestsellers__slider').slick(
         {
             dots: true,
