@@ -215,7 +215,7 @@
         .text {
           font-size: 14px;
           line-height: 17px;
-          letter-spacing: -0.1px;
+          letter-spacing: -0.7px;
 
           &:not(:last-of-type) {
             margin-bottom: 10px;
@@ -237,6 +237,7 @@
     }
 
     .subscribe_mob {
+      display: block;
       background: #FF5762;
       width: 100%;
       height: 80px;
