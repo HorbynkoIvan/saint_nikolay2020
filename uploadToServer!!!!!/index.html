@@ -3,8 +3,11 @@
 
 </style>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/JQuery-Snowfall/1.7.4/snowfall.jquery.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/JQuery-Snowfall/1.7.4/snowfall.min.js" defer></script>
 
 <div class="saint_nikolay2020 container">
     <section class="showcase">
@@ -315,7 +318,11 @@
 
 <script type="text/javascript">
     window.onload = function () {
-
+        $(".saint_nikolay2020").snowfall({
+            image: "https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/NYvichy89/flake1.png",
+            minSize: 10,
+            maxSize: 32
+        });
         $('.banner .inner').click(function(){
             window.location.href='https://parfums.ua/ua/promotions/dostavka-krasoti';
         });

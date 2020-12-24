@@ -10,8 +10,19 @@ window.$ = window.jQuery = $;
 
 window.addEventListener('DOMContentLoaded', () => {
     openMore();
-   // $(".showcase").snowfall({image :"/assets/img/flake.png", minSize: 10, maxSize:32});
-    $(".showcase").snowfall();
+    $(".saint_nikolay2020").snowfall({
+        image: "https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/NYvichy89/flake1.png",
+        minSize: 10,
+        maxSize: 32
+    });
+    // $(".saint_nikolay2020").snowfall({
+    //     minSize: 5,
+    //     maxSize: 10,
+    //     round: true,
+    //     shadow: true,
+    //     flakeCount: 100,
+    //     maxSpeed: 5
+    // });
     function openMore() {
         const $btnMore = $('#btn_more');
         const $shadow = $('.about_top .shadow');
