@@ -24,6 +24,7 @@ body {
 .wrapper {
 	margin-left: auto;
 	margin-right: auto;
+	overflow: hidden;
 }
 
 .saint_nikolay2020.container *{
@@ -49,7 +50,7 @@ img{
 }
 
 .container {
-	@include min-max(320px, 1600px, 0);
+	@include min-max(320px, 1920px, 0);
 	overflow: hidden;
 
 	//styles to remove wrapper on server side styles
