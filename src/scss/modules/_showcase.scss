@@ -192,13 +192,14 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .showcase {
 
     .showcase_top {
       background: url("https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/showcase_top_bg_ru.jpg") center top no-repeat;
       background-size: cover;
-      background-position: 46%;
+      //background-position: 46%;
+      background-position: 34%;
       height: 504px;
 
       .top_wrapper {
