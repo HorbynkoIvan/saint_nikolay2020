@@ -1,1772 +1,222 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<style type="text/css">.landing-body a, .landing-body h1, .landing-body h2, .landing-body h3, .landing-body h4, .landing-body h5, .landing-body li, .landing-body p, .landing-body span, .landing-body ul, body {
-    margin: 0;
-    padding: 0;
-    border: 0
-}
-
-.wrapper {
-    margin-left: auto;
-    margin-right: auto
-}
-
-.container {
-    max-width: 100%;
-    padding: 0;
-    overflow: hidden;
-    max-width: none !important;
-    padding: 0 !important
-}
-
-@font-face {
-    font-family: GothamPro;
-    src: url(https://cdn.parfums.ua/public/assets/font/GothamPro/GothamPro.eot?#iefix) format('embedded-opentype'), url(https://cdn.parfums.ua/public/assets/font/GothamPro/GothamPro.otf) format('opentype'), url(https://cdn.parfums.ua/public/assets/font/GothamPro/GothamPro.woff) format('woff'), url(https://cdn.parfums.ua/public/assets/font/GothamPro/GothamPro.ttf) format('truetype');
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-family: GothamPro;
-    src: url(https://cdn.parfums.ua/public/assets/font/GothamProBold/GothamProBold.eot?#iefix) format('embedded-opentype'), url(https://cdn.parfums.ua/public/assets/font/GothamProBold/GothamProBold.woff) format('woff'), url(https://cdn.parfums.ua/public/assets/font/GothamProBold/GothamProBold.ttf) format('truetype');
-    font-weight: 600;
-    font-style: normal
-}
-
-@font-face {
-    font-family: GothamPro;
-    src: url(https://cdn.parfums.ua/public/assets/font/GothamProMedium/GothamProMedium.eot?#iefix) format('embedded-opentype'), url(https://cdn.parfums.ua/public/assets/font/GothamProMedium/GothamProMedium.woff) format('woff'), url(https://cdn.parfums.ua/public/assets/font/GothamProMedium/GothamProMedium.ttf) format('truetype');
-    font-weight: 500;
-    font-style: normal
-}
-
-.container .landing-body *, .landing-body * {
-    font-family: GothamPro !important;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    line-height: 120%
-}
-
-.landing-body section {
-    overflow: hidden;
-    color: #fff;
-    background-color: #000;
-    font-weight: 400;
-    position: relative;
-    font-size: 16px
-}
-
-.landing-body a {
-    text-decoration: none
-}
-
-.pink_qwe {
-    color: #fb5ecf
-}
-
-a.pink_qwe, span.pink_qwe {
-    border-bottom: 1px dotted transparent
-}
-
-a.pink_qwe:hover, span.pink_qwe:hover {
-    border-bottom: 1px solid #fb5ecf;
-    -webkit-transition: .6s;
-    -o-transition: .6s;
-    transition: .6s
-}
-
-.landing-body b {
-    font-weight: 600 !important
-}
-
-.button {
-    outline: 0
-}
-
-.in_qwe {
-    width: 1024px;
-    margin: 0 auto
-}
-
-.over_qwe {
-    margin: 0 -288px;
-    padding: 0 288px
-}
-
-.title_qwe {
-    font-size: 36px;
-    text-align: center;
-    font-weight: 500;
-    line-height: 120%
-}
-
-.btn_type2 {
-    border: none;
-    outline: 0;
-    overflow: hidden;
-    background: -o-linear-gradient(.14deg, #fb5ecf .1%, #00fff0 99.88%);
-    background: linear-gradient(89.86deg, #fb5ecf .1%, #00fff0 99.88%);
-    border-radius: 30px;
-    width: 300px;
-    display: block;
-    text-align: center;
-    height: 52px;
-    line-height: 52px !important;
-    position: relative;
-    font-size: 24px;
-    font-weight: 500;
-    cursor: pointer;
-    color: #000
-}
-
-.btn_type2:hover {
-    background: -o-linear-gradient(.14deg, #00fff0 .1%, #fb5ecf 99.88%);
-    background: linear-gradient(89.86deg, #00fff0 .1%, #fb5ecf 99.88%);
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s;
-    -webkit-box-shadow: 3px 0 8px rgba(251, 94, 207, .8), -3px 0 16px rgba(0, 255, 240, .8);
-    box-shadow: 3px 0 8px rgba(251, 94, 207, .8), -3px 0 16px rgba(0, 255, 240, .8)
-}
-
-.head_mob {
-    display: none
-}
-
-.head_block_qwe {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-bottom: 109px;
-    background: url(https://cdn.parfums.ua/public/upload/promotionpage/test/h1_right.jpg) 100% 0 no-repeat;
-    position: relative
-}
-
-.somethig_special_qwe {
-    position: absolute;
-    width: 1992.14px;
-    height: 50px;
-    line-height: 50px !important;
-    left: 495px;
-    top: 391px;
-    background: -o-linear-gradient(left, #fb5ecf .53%, #00fff0 550px);
-    background: linear-gradient(90deg, #fb5ecf .53%, #00fff0 550px);
-    -webkit-transform: rotate(-6deg);
-    -ms-transform: rotate(-6deg);
-    transform: rotate(-6deg);
-    font-size: 30px;
-    font-weight: 500;
-    color: #000;
-    padding-left: 35px
-}
-
-.somethig_special2_qwe {
-    position: absolute;
-    width: 505.21px;
-    height: 50px;
-    line-height: 50px !important;
-    left: 503px;
-    top: 521px;
-    background: -o-linear-gradient(159.84deg, #fb5ecf 47.59%, #8d0066 72.91%);
-    background: linear-gradient(290.16deg, #fb5ecf 47.59%, #8d0066 72.91%);
-    -webkit-transform: rotate(6deg);
-    -ms-transform: rotate(6deg);
-    transform: rotate(6deg);
-    font-size: 30px;
-    font-weight: 500;
-    color: #000;
-    padding-left: 208px
-}
-
-.head_r1_qwe {
-    padding-top: 39px
-}
-
-.head_r1_qwe, .head_r2_qwe {
-    font-size: 108px;
-    color: #00fff0;
-    font-weight: 600;
-    line-height: 100% !important
-}
-
-.head_r2_qwe {
-    font-size: 100px;
-    padding-bottom: 239px;
-    background: url(https://cdn.parfums.ua/public/upload/promotionpage/test/h1_desc.png) 0 100% no-repeat;
-    margin-bottom: 82px;
-    background-size: contain
-}
-
-.head_r3_qwe .btn_type2 {
-    margin: 0 auto;
-    display: block
-}
-
-.second_qwe .pink_qwe {
-    font-size: 36px;
-    text-align: center;
-    font-weight: 500
-}
-
-.second_qwe .title_qwe {
-    margin-bottom: 22px
-}
-
-.second_block_qwe {
-    margin-bottom: 90px;
-    padding: 3px;
-    background: -webkit-gradient(linear, left top, right top, from(#fb5ecf), to(#00fff0));
-    background: -o-linear-gradient(left, #fb5ecf 0, #00fff0 100%);
-    background: linear-gradient(90deg, #fb5ecf 0, #00fff0 100%);
-    border-radius: 8px;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    -webkit-transition: -webkit-box-shadow .6s;
-    transition: -webkit-box-shadow .6s;
-    -o-transition: box-shadow .6s;
-    transition: box-shadow .6s;
-    transition: box-shadow .6s, -webkit-box-shadow .6s
-}
-
-.second_block_in_qwe {
-    padding: 29px 9px 0 511px;
-    background: url(https://cdn.parfums.ua/public/upload/promotionpage/test/sec2_desc.jpg) 0 0 no-repeat;
-    width: 100%;
-    height: 284px;
-    border-radius: 8px
-}
-
-.second_block_in_qwe p {
-    margin-bottom: 1em;
-    font-size: 24px;
-    color: #fff
-}
-
-.second_block_in_qwe p:nth-child(2) {
-    margin-bottom: 18px
-}
-
-.second_block_in_qwe p span {
-    font-weight: 500;
-    color: #00fff0
-}
-
-.second_block_in_qwe span.pink_qwe {
-    font-size: 20px;
-    font-weight: 400
-}
-
-.third_qwe {
-    position: relative;
-    background: url(https://cdn.parfums.ua/public/upload/promotionpage/test/sale.png) 50% 498px no-repeat
-}
-
-.third_qwe .title_qwe {
-    width: 672px;
-    display: block;
-    margin: 0 auto 12px auto
-}
-
-.third_qwe .pink_qwe {
-    font-size: 24px;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 34px
-}
-
-.third_items_qwe {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
-}
-
-.third_item_qwe {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 calc(50% - 15px);
-    flex: 0 0 calc(50% - 15px);
-    max-width: calc(50% - 15px)
-}
-
-.third_item_border_qwe {
-    margin-bottom: 20px;
-    padding: 3px;
-    background: -webkit-gradient(linear, left top, right top, from(#fb5ecf), to(#00fff0));
-    background: -o-linear-gradient(left, #fb5ecf 0, #00fff0 100%);
-    background: linear-gradient(90deg, #fb5ecf 0, #00fff0 100%);
-    border-radius: 8px;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    -webkit-transition: -webkit-box-shadow .6s;
-    transition: -webkit-box-shadow .6s;
-    -o-transition: box-shadow .6s;
-    transition: box-shadow .6s;
-    transition: box-shadow .6s, -webkit-box-shadow .6s
-}
-
-.third_item_in_qwe {
-    position: relative;
-    padding-bottom: 50%;
-    width: 100%;
-    background-size: cover;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    border-radius: 8px
-}
-
-.black_but_border:hover, .second_block_qwe:hover, .third_item_border_qwe:hover {
-    -webkit-animation: animatedgradient 1.2s ease forwards;
-    animation: animatedgradient 1.2s ease forwards;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -webkit-box-shadow: 4px 0 10px rgba(0, 255, 240, .8), -4px 0 20px rgba(251, 94, 207, .8);
-    box-shadow: 4px 0 10px rgba(0, 255, 240, .8), -4px 0 20px rgba(251, 94, 207, .8);
-    background: -webkit-gradient(linear, left top, right top, from(#fb5ecf), to(#00fff0));
-    background: -o-linear-gradient(left, #fb5ecf 0, #00fff0 100%);
-    background: linear-gradient(90deg, #fb5ecf 0, #00fff0 100%)
-}
-
-@-webkit-keyframes animatedgradient {
-    100% {
-        background-position: 100% 50%
-    }
-}
-
-@keyframes animatedgradient {
-    100% {
-        background-position: 100% 50%
-    }
-}
-
-.third_item1_qwe .third_item_in_qwe {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/sec3_block1.jpg)
-}
-
-.third_item2_qwe .third_item_in_qwe {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/sec3_block2.jpg)
-}
-
-.third_item3_qwe .third_item_in_qwe {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/sec3_block3.jpg)
-}
-
-.third_item4_qwe .third_item_in_qwe {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/sec3_block4.jpg)
-}
-
-.third_item5_qwe .third_item_in_qwe {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/sec3_block5.jpg)
-}
-
-.third_item6_qwe .third_item_in_qwe {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/sec3_block6.jpg)
-}
-
-.third_item7_qwe .third_item_in_qwe {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/sec3_block7.jpg)
-}
-
-.third_item8_qwe .third_item_in_qwe {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/sec3_block8.jpg)
-}
-
-.third_item_in_qwe span {
-    position: absolute;
-    bottom: 7px;
-    right: 17px;
-    font-size: 14px;
-    text-align: right;
-    color: #738397
-}
-
-.third_qwe .text1 {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 14px
-}
-
-.third_item8_qwe .text1 {
-    padding-bottom: 1em
-}
-
-.third_qwe .text2 {
-    margin-bottom: 14px
-}
-
-.third_qwe a.pink_qwe {
-    display: inline-block;
-    font-size: 14px;
-    margin-bottom: 37px;
-    text-decoration: none;
-    text-align: left;
-    font-weight: 400
-}
-
-.third_qwe .third_note-qwe {
-    margin: 5px 0 63px 0;
-    font-size: 14px;
-    color: #738397
-}
-
-.fifth_qwe .pink_qwe {
-    font-size: 24px;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 29px
-}
-
-.fifth_items_qwe {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
-}
-
-.fifth_items_qwe > div {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 calc(20% - 28px);
-    flex: 0 0 calc(20% - 28px);
-    max-width: calc(20% - 28px);
-    margin-bottom: 20px;
-    position: relative
-}
-
-.fifth_items_qwe > div a {
-    display: block;
-    width: 100%;
-    padding-bottom: 56.81%;
-    background-size: contain;
-    background-position: 50% 50%;
-    border: 2px solid #000;
-    border-radius: 12px;
-    overflow: hidden;
-    position: relative;
-    font-size: 0 !important;
-    line-height: 0 !important
-}
-
-.fifth_items_qwe > div a:hover {
-    border: 2px solid #00fff0;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s
-}
-
-.fifth_item1_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/01.png)
-}
-
-.fifth_item2_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/02.png)
-}
-
-.fifth_item3_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/03.png)
-}
-
-.fifth_item4_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/04.png)
-}
-
-.fifth_item5_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/05.png)
-}
-
-.fifth_item6_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/06.png)
-}
-
-.fifth_item7_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/07.png)
-}
-
-.fifth_item8_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/08.png)
-}
-
-.fifth_item9_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/09.png)
-}
-
-.fifth_item10_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/10.png)
-}
-
-.fifth_item11_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/11.png)
-}
-
-.fifth_item12_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/12.png)
-}
-
-.fifth_item13_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/13.png)
-}
-
-.fifth_item14_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/14.png)
-}
-
-.fifth_item15_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/15.png)
-}
-
-.fifth_item16_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/16.png)
-}
-
-.fifth_item17_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/17.png)
-}
-
-.fifth_item18_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/18.png)
-}
-
-.fifth_item19_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/19.png)
-}
-
-.fifth_item20_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/20.png)
-}
-
-.fifth_item21_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/21.png)
-}
-
-.fifth_item22_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/22.png)
-}
-
-.fifth_item23_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/23.png)
-}
-
-.fifth_item24_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/24.png)
-}
-
-.fifth_item25_qwe a {
-    background-image: url(https://cdn.parfums.ua/public/upload/promotionpage/test/25.png)
-}
-
-.fifth_but_qwe {
-    margin: 21px 0 90px 0
-}
-
-.sixth_in_qwe {
-    margin-bottom: 53px;
-    padding: 85px 0 85px 527px;
-    background: url(https://cdn.parfums.ua/public/upload/promotionpage/test/sec6.jpg) 58px 50% no-repeat
-}
-
-.sixth_in_qwe .green_title_qwe {
-    color: #00fff0;
-    font-size: 36px;
-    font-weight: 500;
-    margin-bottom: 23px
-}
-
-.sixth_txt_qwe {
-    font-size: 24px;
-    margin-bottom: 21px
-}
-
-.sixth_in_qwe a.pink_qwe {
-    font-size: 20px
-}
-
-.delivery_ban_qwe a {
-    display: block;
-    height: 140px;
-    width: 100%;
-    background: url(https://cdn.parfums.ua/public/upload/promotionpage/test/delivery_banru.jpg) 50% 0 no-repeat;
-    border-radius: 8px
-}
-
-.seventh_qwe {
-    padding: 277px 0 94px 0;
-    background: url(https://cdn.parfums.ua/public/upload/promotionpage/test/buy_onlineru.png) 50% 0 no-repeat
-}
-
-.seventh_but_qwe a {
-    margin: 0 auto
-}
-
-.seventh_but_qwe a.btn_type2 {
-    width: 322px
-}
-
-.social_in_qwe {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-bottom: 86px
-}
-
-.social_txt_qwe {
-    max-width: 234px;
-    font-size: 20px;
-    font-weight: 500
-}
-
-.social_ico_qwe a:first-child {
-    margin-right: 30px
-}
-
-.black_but_border {
-    padding: 3px;
-    width: 300px;
-    height: 52px;
-    background: -webkit-gradient(linear, left top, right top, from(#fb5ecf), to(#00fff0));
-    background: -o-linear-gradient(left, #fb5ecf 0, #00fff0 100%);
-    background: linear-gradient(90deg, #fb5ecf 0, #00fff0 100%);
-    border-radius: 30px;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    -webkit-transition: -webkit-box-shadow .6s;
-    transition: -webkit-box-shadow .6s;
-    -o-transition: box-shadow .6s;
-    transition: box-shadow .6s;
-    transition: box-shadow .6s, -webkit-box-shadow .6s
-}
-
-.btn_black_qwe {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    font-size: 24px;
-    border: none;
-    width: 294px;
-    height: 46px;
-    line-height: 46px !important;
-    border-radius: 30px;
-    cursor: pointer;
-    display: block
-}
-
-.black_but_border:hover {
-    background: -webkit-gradient(linear, left top, right top, from(#00fff0), to(#fb5ecf));
-    background: -o-linear-gradient(left, #00fff0 0, #fb5ecf 100%);
-    background: linear-gradient(90deg, #00fff0 0, #fb5ecf 100%)
-}
-
-.landing-body .about {
-    padding: 0 0 60px;
-    color: #637381
-}
-
-.wrap {
-    max-width: 1024px;
-    padding: 0;
-    margin: 0 auto
-}
-
-.about .about_top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative
-}
-
-.about .about_top .top_left, .about .about_top .top_right {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%
-}
-
-.about .about_top .top_left {
-    margin-right: 30px
-}
-
-.about h1, .about h2, .about h3, .about h4 {
-    font-weight: 700;
-    margin-bottom: 30px;
-    color: #637381
-}
-
-.about li, .about p {
-    margin-bottom: 30px;
-    font-size: 14px;
-    color: #637381
-}
-
-.about li {
-    margin-bottom: .5em
-}
-
-.about .about_top .shadow {
-    position: absolute;
-    width: 100%;
-    height: 180px;
-    bottom: 0;
-    background: -o-linear-gradient(top, transparent 0, #000 72.92%);
-    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(72.92%, #000));
-    background: -o-linear-gradient(top, transparent, #000 72.92%);
-    background: linear-gradient(180deg, transparent, #000 72.92%)
-}
-
-.about .black_but_border {
-    width: 220px;
-    height: 48px
-}
-
-.about .btn_black_qwe {
-    width: 214px;
-    height: 42px;
-    line-height: 42px !important;
-    font-size: 18px
-}
-
-.about ul {
-    display: block;
-    list-style-type: disc;
-    -webkit-margin-before: 1em;
-    margin-block-start: 1em;
-    -webkit-margin-after: 1em;
-    margin-block-end: 1em;
-    -webkit-margin-start: 0;
-    margin-inline-start: 0;
-    -webkit-margin-end: 0;
-    margin-inline-end: 0;
-    -webkit-padding-start: 40px;
-    padding-inline-start: 40px
-}
-
-.about_height_qwe {
-    height: 550px;
-    overflow-y: hidden
-}
-
-@media (max-width: 1200px) {
-    .in_qwe {
-        width: 720px;
-        margin: 0 auto
-    }
-
-    .over_qwe {
-        margin: 0 -240px;
-        padding: 0 240px
-    }
-
-    .title_qwe {
-        font-size: 30px
-    }
-
-    .somethig_special_qwe {
-        display: block;
-        width: 665px;
-        height: 35px;
-        line-height: 35px !important;
-        left: 358px;
-        top: 336px;
-        font-size: 20px;
-        padding-left: 35px
-    }
-
-    .somethig_special2_qwe {
-        display: block;
-        width: 323.21px;
-        height: 35px;
-        line-height: 35px !important;
-        left: 363px;
-        top: 386px;
-        font-size: 20px;
-        padding-left: 125px
-    }
-
-    .head_r1_qwe {
-        font-size: 92px
-    }
-
-    .head_r1_qwe {
-        padding-top: 18px
-    }
-
-    .head_r2_qwe {
-        font-size: 85px;
-        padding-bottom: 197px;
-        background: url(https://cdn.parfums.ua/public/upload/promotionpage/test/h1_desc.png) 0 100% no-repeat;
-        margin-bottom: 28px;
-        background-size: contain
-    }
-
-    .head_block_qwe {
-        background: url(https://cdn.parfums.ua/public/upload/promotionpage/test/h1_right_pl.jpg) 100% 0 no-repeat;
-        padding-bottom: 73px
-    }
-
-    .head_r3_qwe .btn_type2 {
-        width: 275px;
-        height: 48px;
-        line-height: 48px !important
-    }
-
-    .second_qwe .pink_qwe {
-        font-size: 36px
-    }
-
-    .second_qwe .title_qwe {
-        margin-bottom: 22px
-    }
-
-    .second_block_qwe {
-        margin-bottom: 53px
-    }
-
-    .second_block_in_qwe {
-        padding: 13px 11px 0 366px;
-        background: #000 url(https://cdn.parfums.ua/public/upload/promotionpage/test/sec2_tab.jpg) 0 0 no-repeat;
-        width: 100%;
-        height: 246px
-    }
-
-    .second_block_in_qwe p {
-        font-size: 18px;
-        line-height: 130%
-    }
-
-    .second_block_in_qwe span.pink_qwe {
-        font-size: 14px
-    }
-
-    .third_qwe {
-        background: 0 0
-    }
-
-    .third_qwe .title_qwe {
-        margin-bottom: 7px;
-        width: 100%
-    }
-
-    .third_qwe .pink_qwe {
-        font-size: 20px;
-        margin-bottom: 21px
-    }
-
-    .third_item_border_qwe {
-        margin-bottom: 10px
-    }
-
-    .third_item_qwe {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(50% - 10px);
-        flex: 0 0 calc(50% - 10px);
-        max-width: calc(50% - 10px)
-    }
-
-    .third_qwe .text1 {
-        margin-bottom: 7px
-    }
-
-    .third_item8_qwe .text1 {
-        padding-bottom: 0
-    }
-
-    .third_item4_qwe .third_item_in_qwe span {
-        font-size: 13px
-    }
-
-    .third_qwe .text2 {
-        margin-bottom: 7px
-    }
-
-    .third_qwe a.pink_qwe {
-        margin-bottom: 45px
-    }
-
-    .third_qwe .third_note-qwe {
-        margin: -18px 0 44px 0
-    }
-
-    .fifth_qwe .pink_qwe {
-        font-size: 20px;
-        margin-bottom: 22px
-    }
-
-    .fifth_items_qwe > div {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(20% - 12px);
-        flex: 0 0 calc(20% - 12px);
-        max-width: calc(20% - 12px);
-        margin-bottom: 12px
-    }
-
-    .fifth_but_qwe {
-        margin-bottom: 65px
-    }
-
-    .sixth_in_qwe {
-        margin-bottom: 50px;
-        padding: 67px 50px 67px 360px;
-        background: url(https://cdn.parfums.ua/public/upload/promotionpage/test/sec6_tab.jpg) 42px 50% no-repeat
-    }
-
-    .sixth_in_qwe .green_title_qwe {
-        font-size: 20px;
-        margin-bottom: 17px
-    }
-
-    .sixth_txt_qwe {
-        font-size: 18px;
-        margin-bottom: 11px
-    }
-
-    .sixth_in_qwe a.pink_qwe {
-        font-size: 14px
-    }
-
-    .seventh_qwe {
-        padding: 0 0 58px 0;
-        background: 0 0
-    }
-
-    .seventh_but_qwe a.btn_type2 {
-        width: 250px;
-        height: 48px;
-        line-height: 48px !important
-    }
-
-    .social_in_qwe {
-        margin-bottom: 36px
-    }
-
-    .social_txt_qwe {
-        max-width: 211px;
-        font-size: 18px;
-        font-weight: 500
-    }
-
-    .black_but_border {
-        width: 251px;
-        height: 48px
-    }
-
-    .btn_black_qwe {
-        width: 245px;
-        height: 42px;
-        line-height: 42px !important
-    }
-
-    .delivery_ban_qwe a {
-        width: 100%;
-        background: url(https://cdn.parfums.ua/public/upload/promotionpage/test/delivery_ban_tabru.jpg) 50% 0 no-repeat;
-        margin-bottom: 49px
-    }
-}
-
-@media (max-width: 767px) {
-    .in_qwe {
-        width: 100%
-    }
-
-    .about .in_qwe.wrap {
-        width: 288px
-    }
-
-    .over_qwe {
-        margin: 0;
-        padding: 0
-    }
-
-    .title_qwe {
-        font-size: 20px
-    }
-
-    .head_mob {
-        display: block;
-        font-size: 25px;
-        text-align: center;
-        padding: 27px 0 6px 0
-    }
-
-    .somethig_special_qwe {
-        display: block;
-        width: 308.93px;
-        height: 35px;
-        line-height: 35px !important;
-        left: 17px;
-        top: 355px;
-        font-size: 17px;
-        padding-left: 35px
-    }
-
-    .somethig_special2_qwe {
-        display: block;
-        width: 294.21px;
-        height: 35px;
-        line-height: 35px !important;
-        left: 24px;
-        top: 386px;
-        font-size: 17px;
-        padding-left: 125px
-    }
-
-    .head_block_qwe {
-        display: block;
-        width: 320px;
-        margin: 0 auto;
-        padding-bottom: 38px;
-        background: 0 0;
-        overflow-x: hidden
-    }
-
-    .head_r1_qwe {
-        font-size: 70px;
-        padding-top: 0;
-        text-align: center
-    }
-
-    .head_r2_qwe {
-        font-size: 64px;
-        text-align: center;
-        padding-bottom: 154px;
-        background: url(https://cdn.parfums.ua/public/upload/promotionpage/test/h1_mob.png) 50% 100% no-repeat;
-        margin-bottom: 21px;
-        background-size: inherit
-    }
-
-    .head_r3_qwe {
-        padding-top: 419px;
-        background: url(https://cdn.parfums.ua/public/upload/promotionpage/test/h1_right_mob.jpg) 50% 0 no-repeat
-    }
-
-    .head_r3_qwe .btn_type2 {
-        width: 285px;
-        height: 48px;
-        line-height: 48px !important;
-        font-size: 18px
-    }
-
-    .second_qwe .pink_qwe {
-        font-size: 20px
-    }
-
-    .second_qwe .title_qwe {
-        margin-bottom: 17px
-    }
-
-    .second_block_qwe {
-        width: 320px;
-        margin: 0 auto 48px auto
-    }
-
-    .second_block_in_qwe {
-        padding: 223px 17px 15px 17px;
-        background: #000 url(https://cdn.parfums.ua/public/upload/promotionpage/test/sec2_mob.jpg) 0 0 no-repeat;
-        width: 100%;
-        height: auto;
-        background-size: cover
-    }
-
-    .second_block_in_qwe p {
-        font-size: 14px
-    }
-
-    .third_qwe .pink_qwe {
-        font-size: 18px;
-        margin-bottom: 12px
-    }
-
-    .third_item_qwe {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(50% - 10px);
-        flex: 0 0 calc(50% - 10px);
-        max-width: calc(50% - 10px)
-    }
-
-    .third_item7_qwe .third_item_in_qwe {
-        -webkit-filter: grayscale(0);
-        filter: grayscale(0)
-    }
-
-    .third_item_in_qwe span {
-        font-size: 12px;
-        right: 13px
-    }
-
-    .third_qwe .text1 {
-        font-size: 16px;
-        margin-bottom: 4px
-    }
-
-    .third_qwe .third_item2_qwe .text1 {
-        font-size: 16px;
-        height: auto
-    }
-
-    .third_qwe .text2 {
-        font-size: 14px;
-        margin-bottom: 10px
-    }
-
-    .third_qwe .third_note-qwe {
-        font-size: 12px;
-        margin: -29px 16px 37px 16px
-    }
-
-    .fifth_qwe .pink_qwe {
-        font-size: 18px;
-        margin-bottom: 12px;
-        padding: 0 12px
-    }
-
-    .fifth_items_qwe {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center
-    }
-
-    .fifth_items_qwe > div {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(25% - 10px);
-        flex: 0 0 calc(25% - 10px);
-        max-width: calc(25% - 10px);
-        margin: 0 5px 12px 5px
-    }
-
-    .fifth_but_qwe {
-        margin-bottom: 26px
-    }
-
-    .sixth_in_qwe {
-        width: 242px;
-        margin: 0 auto 50px auto;
-        padding: 244px 0 0 0;
-        background: url(https://cdn.parfums.ua/public/upload/promotionpage/test/sec6_mob.jpg) 50% 0 no-repeat;
-        text-align: center
-    }
-
-    .sixth_in_qwe .green_title_qwe {
-        font-size: 16px;
-        margin-bottom: 8px
-    }
-
-    .sixth_txt_qwe {
-        font-size: 14px;
-        margin-bottom: 4px
-    }
-
-    .sixth_in_qwe a.pink_qwe {
-        font-size: 14px;
-        font-weight: 500
-    }
-
-    .delivery_ban_qwe a {
-        width: 320px;
-        height: 300px;
-        background: url(https://cdn.parfums.ua/public/upload/promotionpage/test/delivery_ban_mobru.jpg) 50% 0 no-repeat;
-        margin: 0 auto 42px auto
-    }
-
-    .seventh_qwe {
-        padding: 0 0 40px 0
-    }
-
-    .seventh_but_qwe a.btn_type2 {
-        width: 286px;
-        font-size: 18px
-    }
-
-    .social_in_qwe {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        margin-bottom: 40px
-    }
-
-    .social_txt_qwe {
-        max-width: 320px;
-        font-size: 16px;
-        margin-bottom: 7px
-    }
-
-    .social_ico_qwe a:first-child {
-        margin-right: 19px
-    }
-
-    .social_ico_qwe a img {
-        width: 50px;
-        height: 50px
-    }
-
-    .black_but_border {
-        width: 220px
-    }
-
-    .btn_black_qwe {
-        width: 214px;
-        font-size: 18px
-    }
-
-    .about .about_top {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column
-    }
-
-    .about h1, .about h2, .about h3, .about h4 {
-        font-size: 14px;
-        margin-bottom: 1em
-    }
-
-    .about li, .about p {
-        margin-bottom: 1em
-    }
-
-    .about .about_top .top_left {
-        margin-right: 0
-    }
-
-    .about .in_qwe.wrap {
-        width: 288px
-    }
-}
-
-@media (max-width: 600px) {
-    .third_items_qwe {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column
-    }
-
-    .third_item_qwe {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding: 0 16px
-    }
-
-    .third_item_border_qwe {
-        margin: 0 -16px 10px -16px
-    }
-
-    .fifth_items_qwe > div {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(33.333% - 18px);
-        flex: 0 0 calc(33.333% - 18px);
-        max-width: calc(33.333% - 18px);
-        margin: 0 9px 10px 9px
-    }
-
-    .in_qwe {
-        width: 320px
-    }
-}
-
-.btn_black_qwe:after, .btn_type2:after {
-    -webkit-animation: sheen2 3s;
-    animation: sheen2 3s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-timing-function: cubic-bezier(.18, .89, .32, 1.28);
-    animation-timing-function: cubic-bezier(.18, .89, .32, 1.28);
-    content: "";
-    width: 100px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: -55px;
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    background: -o-linear-gradient(top, transparent, hsla(0, 0%, 100%, .5) 50%, transparent);
-    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, hsla(0, 0%, 100%, .5)), to(transparent));
-    background: linear-gradient(180deg, transparent, hsla(0, 0%, 100%, .5) 50%, transparent)
-}
-
-.fifth_items_qwe > div a:after {
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-timing-function: cubic-bezier(.18, .89, .32, 1.28);
-    animation-timing-function: cubic-bezier(.18, .89, .32, 1.28);
-    content: "";
-    width: 190px;
-    height: 25%;
-    position: absolute;
-    top: 35px;
-    left: -185px;
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    background: -o-linear-gradient(top, transparent, hsla(0, 0%, 100%, .4) 50%, transparent);
-    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, hsla(0, 0%, 100%, .4)), to(transparent));
-    background: linear-gradient(180deg, transparent, hsla(0, 0%, 100%, .4) 50%, transparent)
-}
-
-.fifth_items_qwe > div:hover a:after {
-    -webkit-animation: sheen2 2s;
-    animation: sheen2 2s
-}
-
-@-webkit-keyframes sheen2 {
-    to {
-        left: 300px
-    }
-}
-
-@keyframes sheen2 {
-    to {
-        left: 300px
-    }
-}
+<style type="text/css">a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}@font-face{font-family:Gotham Pro;src:url(https://cdn.parfums.ua/public/assets/font/GothamPro/GothamPro.ttf) format("truetype");font-weight:400}@font-face{font-family:Gotham Pro-Medium;src:url(https://cdn.parfums.ua/public/assets/font/GothamProMedium/GothamProMedium.ttf) format("truetype");font-weight:500}@font-face{font-family:Gotham Pro-Bold;src:url(https://cdn.parfums.ua/public/assets/font/GothamProBold/GothamProBold.ttf) format("truetype");font-weight:700}.slick-slider{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}.slick-list,.slick-slider{position:relative;display:block}.slick-list{overflow:hidden;margin:0;padding:0}.slick-list:focus{outline:none}.slick-list.dragging{cursor:pointer;cursor:hand}.slick-slider .slick-list,.slick-slider .slick-track{-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0)}.slick-track{position:relative;left:0;top:0;display:block;margin-left:auto;margin-right:auto}.slick-track:after,.slick-track:before{content:"";display:table}.slick-track:after{clear:both}.slick-loading .slick-track{visibility:hidden}.slick-slide{float:left;height:100%;min-height:1px;display:none}[dir=rtl] .slick-slide{float:right}.slick-slide img{display:block}.slick-slide.slick-loading img{display:none}.slick-slide.dragging img{pointer-events:none}.slick-initialized .slick-slide{display:block}.slick-loading .slick-slide{visibility:hidden}.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}.slick-arrow.slick-hidden{display:none}[v-cloak]{opacity:0}.popup-opened{overflow:hidden}.clearfix:after{content:"";display:block;clear:both}.wrapper{margin-left:auto;margin-right:auto;overflow:hidden}.saint_nikolay2020.container *{font-family:Gotham Pro!important}.img-wr{text-align:center}.img-wr img{max-width:100%;max-height:100%;width:auto;height:auto}.row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}img{display:block}.container{max-width:1600px!important;padding:0;overflow:hidden;padding:0!important}.container,.wrap{min-width:320px;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0 auto}.wrap{max-width:1024px!important;padding:0}ol li{list-style:decimal}.btn_300_48{width:300px;height:48px}.btn_type1{font-size:24px;line-height:1;color:#fff;text-decoration:none;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;cursor:pointer;position:relative;overflow:hidden;border:2px solid #fff;-webkit-border-radius:30px;border-radius:30px;-webkit-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease}.btn_type1:active,.btn_type1:hover{-webkit-box-shadow:0 0 10px 5px hsla(0,0%,100%,.6);box-shadow:0 0 10px 5px hsla(0,0%,100%,.6)}.btn_type2{font-family:Gotham Pro-Medium!important;border:none;outline:none;width:380px;height:48px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;cursor:pointer;font-size:18px;line-height:1;position:relative;overflow:hidden;background:-webkit-linear-gradient(.14deg,#8a0c1d .1%,#ff5862 99.88%);background:-o-linear-gradient(.14deg,#8a0c1d .1%,#ff5862 99.88%);background:linear-gradient(89.86deg,#8a0c1d .1%,#ff5862 99.88%);-webkit-border-radius:30px;border-radius:30px}.btn_type2:active,.btn_type2:hover{background:-webkit-linear-gradient(.14deg,#ff5862 .1%,#8a0c1d 99.88%);background:-o-linear-gradient(.14deg,#ff5862 .1%,#8a0c1d 99.88%);background:linear-gradient(89.86deg,#ff5862 .1%,#8a0c1d 99.88%)}.btn_type2:after{-webkit-animation:sheen2 3s;animation:sheen2 3s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:cubic-bezier(.18,.89,.32,1.28);animation-timing-function:cubic-bezier(.18,.89,.32,1.28);content:"";width:100px;height:100%;position:absolute;top:0;left:-55px;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);background:-webkit-gradient(linear,left top,left bottom,from(transparent),color-stop(50%,hsla(0,0%,100%,.5)),to(transparent));background:-webkit-linear-gradient(top,transparent,hsla(0,0%,100%,.5) 50%,transparent);background:-o-linear-gradient(top,transparent,hsla(0,0%,100%,.5) 50%,transparent);background:linear-gradient(180deg,transparent,hsla(0,0%,100%,.5) 50%,transparent)}@-webkit-keyframes sheen2{to{left:300px}}@keyframes sheen2{to{left:300px}}.btn_type3{border:3px solid #ffda93;color:#fff;padding:2px;-webkit-box-sizing:border-box;box-sizing:border-box;text-decoration:none;-webkit-border-radius:30px;border-radius:30px;outline:none;position:relative;overflow:hidden;display:block;-webkit-transition:-webkit-box-shadow .3s;transition:-webkit-box-shadow .3s;-o-transition:box-shadow .3s;transition:box-shadow .3s;transition:box-shadow .3s,-webkit-box-shadow .3s}.btn_type3 span{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;width:100%;height:100%;-webkit-border-radius:30px;border-radius:30px}.btn_type3:active,.btn_type3:hover{-webkit-box-shadow:0 0 10px 5px hsla(0,0%,100%,.6);box-shadow:0 0 10px 5px hsla(0,0%,100%,.6)}@media only screen and (min-width:768px) and (max-width:1024px){.btn_300_48{width:275px}}@media only screen and (max-width:767px){.btn_300_48{width:285px}.btn_type1{font-size:18px}.btn_type2{max-width:288px;width:100%}}#bf2020_form .input{width:380px;height:48px;background:#fff;border:2px solid #919eab;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-border-radius:30px;border-radius:30px;text-align:center;margin-bottom:20px;font-size:18px;line-height:1;color:#a9a9a9;outline:none}#bf2020_form .subscription_tooltip{display:none;font-size:14px;line-height:1;color:#8a0c1d;text-align:center;margin-top:5px}@media only screen and (min-width:768px) and (max-width:1024px){#bf2020_form .input{max-width:307px;width:100%}}@media only screen and (max-width:767px){#bf2020_form .input{max-width:288px;width:100%}}.arrow_left,.arrow_right{width:35px;height:65px;position:absolute;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);cursor:pointer}.slick-dots{text-align:center;margin-top:30px}.slick-dots li{display:inline-block;border:none;margin:0 5px}.slick-dots li button{width:15px;height:15px;border:none;outline:none;cursor:pointer;-webkit-border-radius:50%;border-radius:50%;background-color:#ff5862;-webkit-transition:background-color .3s ease;-o-transition:background-color .3s ease;transition:background-color .3s ease;font-size:0}.slick-dots li.slick-active button{background-color:#ffda93}@media only screen and (max-width:767px){.arrow_left,.arrow_right{width:26px;height:50px}}.showcase .showcase_top{background:url(https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/showcase_top_bg_ua.jpg) top no-repeat;-webkit-background-size:cover;background-size:cover;position:relative;overflow:hidden;height:670px}.showcase .showcase_top .showcase_sphera{position:absolute;top:0;right:6.9%;z-index:1}.showcase .showcase_top .showcase_sphera_mob,.showcase .showcase_top .showcase_sphera_tab{display:none}.showcase .showcase_top .showcase_decor{position:absolute;bottom:0;width:100%;height:130px;background:-webkit-gradient(linear,left bottom,left top,from(#d2414a),to(#ff5862));background:-webkit-linear-gradient(bottom,#d2414a,#ff5862);background:-o-linear-gradient(bottom,#d2414a 0,#ff5862 100%);background:linear-gradient(0deg,#d2414a,#ff5862);mix-blend-mode:normal}.showcase .showcase_top .top_wrapper .top_left{position:relative;z-index:1}.showcase .showcase_top .top_wrapper .top_left .miracle{display:none;margin-top:138px}.showcase .showcase_top .top_wrapper .top_left .percent{margin-top:291px}.showcase .showcase_top .top_wrapper .top_left .text1{font-family:Gotham Pro-Medium!important;font-size:120px;line-height:1;color:#ffda93}.showcase .showcase_top .top_wrapper .top_left .text2{font-family:Gotham Pro-Medium!important;font-size:30px;line-height:33px;color:#ffda93;margin-top:10px}.showcase .showcase_top .top_wrapper .top_left .showcase_btn{margin-top:120px}.showcase .showcase_top .showcase_btn_mob{display:none}.showcase .showcase_bottom{position:relative;background:-webkit-gradient(linear,left bottom,left top,color-stop(6.7%,#8a0c1d),color-stop(93.3%,#ff5862)),#01827e;background:-webkit-linear-gradient(bottom,#8a0c1d 6.7%,#ff5862 93.3%),#01827e;background:-o-linear-gradient(bottom,#8a0c1d 6.7%,#ff5862 93.3%),#01827e;background:linear-gradient(0deg,#8a0c1d 6.7%,#ff5862 93.3%),#01827e;padding:43px 0 55px;overflow:hidden}.showcase .showcase_bottom .showcase_bottom_bg{position:absolute;left:0;bottom:0}.showcase .showcase_bottom .showcase_bottom_bg_mob,.showcase .showcase_bottom .showcase_bottom_bg_tab{display:none}.showcase .showcase_bottom .showcase_bottom_title{font-family:Gotham Pro-Medium!important;font-size:45px;line-height:54px;text-align:center;color:#fff;margin-bottom:33px}.showcase .showcase_bottom .bottom_right{max-width:500px;margin-left:auto;margin-right:20px;position:relative}.showcase .showcase_bottom .bottom_right .title{font-family:Gotham Pro-Medium!important;font-size:30px;line-height:36px;color:#ffda93;margin-bottom:34px}.showcase .showcase_bottom .bottom_right .text{font-family:Gotham Pro;font-size:24px;line-height:29px;color:#fff}.showcase .showcase_bottom .bottom_right .text:not(:last-of-type){margin-bottom:20px}.showcase .showcase_bottom .bottom_right .text:last-of-type{margin-bottom:50px}.showcase .showcase_bottom .bottom_right .showcase_link{text-decoration:none;font-family:Gotham Pro-Medium!important;font-size:20px;line-height:1;color:#ffda93;cursor:pointer;-webkit-transition:color .3s;-o-transition:color .3s;transition:color .3s}.showcase .showcase_bottom .bottom_right .showcase_link:hover{color:#fff}@media only screen and (max-width:1440px){.showcase .showcase_top .showcase_sphera{right:0}.showcase .showcase_bottom .showcase_bottom_bg{left:-100px}}@media only screen and (max-width:1280px){.showcase .showcase_top .showcase_sphera{right:-140px}.showcase .showcase_top .top_wrapper .top_left{margin-left:25px}.showcase .showcase_bottom .showcase_bottom_bg{left:-220px}}@media only screen and (max-width:1024px){.showcase .showcase_top{background-position:46%;height:504px}.showcase .showcase_top .top_wrapper .top_left{margin-left:0}.showcase .showcase_top .top_wrapper .top_left .percent{margin-top:210px}.showcase .showcase_top .top_wrapper .top_left .percent img{max-width:266px}.showcase .showcase_top .top_wrapper .top_left .text1{font-size:90px}.showcase .showcase_top .top_wrapper .top_left .text2{font-size:22px;line-height:24px;margin-top:8px}.showcase .showcase_top .top_wrapper .top_left .showcase_btn{margin-top:85px}.showcase .showcase_bottom{padding:28px 0 50px}.showcase .showcase_bottom .showcase_bottom_bg{display:none}.showcase .showcase_bottom .showcase_bottom_bg_tab{display:block;position:absolute;left:0;bottom:0}.showcase .showcase_bottom .showcase_bottom_title{font-size:32px;line-height:38px;margin-bottom:38px}.showcase .showcase_bottom .bottom_right{max-width:349px}.showcase .showcase_bottom .bottom_right .title{font-size:20px;line-height:24px;margin-bottom:34px}.showcase .showcase_bottom .bottom_right .text{font-size:16px;line-height:19px}.showcase .showcase_bottom .bottom_right .showcase_link{font-size:18px}}@media only screen and (max-width:767px){.showcase .showcase_top{background:url(https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/showcase_top_bg_mob.jpg) top no-repeat;height:580px}.showcase .showcase_top .showcase_sphera{position:absolute;top:0;right:6.9%;z-index:1}.showcase .showcase_top .showcase_sphera_tab{display:none}.showcase .showcase_top .showcase_sphera_mob{display:block;position:absolute;top:200px;z-index:1;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.showcase .showcase_top .showcase_decor{height:160px}.showcase .showcase_top .top_wrapper,.showcase .showcase_top .top_wrapper .top_left{max-width:286px;margin:0 auto}.showcase .showcase_top .top_wrapper .top_left .miracle{display:block;margin-top:32px}.showcase .showcase_top .top_wrapper .top_left .miracle img{max-width:286px;margin:0 auto}.showcase .showcase_top .top_wrapper .top_left .percent{margin-top:-20px}.showcase .showcase_top .top_wrapper .top_left .percent img{max-width:200px}.showcase .showcase_top .top_wrapper .top_left .text1{font-size:74px;line-height:89px}.showcase .showcase_top .top_wrapper .top_left .text2{font-size:20px;line-height:24px}.showcase .showcase_top .top_wrapper .top_left .showcase_btn{display:none}.showcase .showcase_top .showcase_btn_mob{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:absolute;bottom:10px;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.showcase .showcase_bottom{background:url(https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/Apple_Watch_BG.png) top no-repeat;-webkit-background-size:cover;background-size:cover;padding:43px 0 55px;height:680px;margin-top:-1px;-webkit-box-sizing:border-box;box-sizing:border-box}.showcase .showcase_bottom .wrap{max-width:286px;margin:0 auto}.showcase .showcase_bottom .showcase_bottom_bg,.showcase .showcase_bottom .showcase_bottom_bg_tab{display:none}.showcase .showcase_bottom .showcase_bottom_bg_mob{display:block;position:absolute;bottom:0;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.showcase .showcase_bottom .showcase_bottom_title{font-size:20px;line-height:24px;margin-bottom:10px}.showcase .showcase_bottom .bottom_right{max-width:286px;margin:0 auto;position:relative}.showcase .showcase_bottom .bottom_right .title{font-size:18px;line-height:22px;margin-bottom:10px}.showcase .showcase_bottom .bottom_right .text{font-size:14px;line-height:17px}.showcase .showcase_bottom .bottom_right .text:last-of-type,.showcase .showcase_bottom .bottom_right .text:not(:last-of-type){margin-bottom:20px}.showcase .showcase_bottom .bottom_right .showcase_link{font-size:14px}}.stress{padding-bottom:90px}.stress .stress_top{max-width:848px;margin:109px auto 13px;text-align:center}.stress .stress_top .text1{color:#8a0c1d}.stress .stress_top .text1,.stress .stress_top .text2{font-size:36px;line-height:43px;font-family:Gotham Pro-Medium!important}.stress .stress_top .text2{color:#fff}.stress .promo{display:block;background:-webkit-linear-gradient(.14deg,#8a0c1d .1%,#ff5862 99.88%);background:-o-linear-gradient(.14deg,#8a0c1d .1%,#ff5862 99.88%);background:linear-gradient(89.86deg,#8a0c1d .1%,#ff5862 99.88%);-webkit-border-radius:8px;border-radius:8px;padding:2px;-webkit-box-sizing:border-box;box-sizing:border-box;height:290px;width:100%;text-decoration:none;-webkit-transition:-webkit-box-shadow .3s ease-in-out;transition:-webkit-box-shadow .3s ease-in-out;-o-transition:box-shadow .3s ease-in-out;transition:box-shadow .3s ease-in-out;transition:box-shadow .3s ease-in-out,-webkit-box-shadow .3s ease-in-out}.stress .promo:active,.stress .promo:hover{-webkit-box-shadow:0 -10px 15px -6px #00fff0,0 5px 15px 0 #fb5ecf,5px 0 15px 0 #00fff0,-5px 0 15px 0 #fb5ecf;box-shadow:0 -10px 15px -6px #00fff0,0 5px 15px 0 #fb5ecf,5px 0 15px 0 #00fff0,-5px 0 15px 0 #fb5ecf}.stress .promo .promo_inner{width:100%;height:100%;background:-webkit-radial-gradient(28.81% 51.38%,48.05% 599.06%,#212b36 0,#000 100%);background:-o-radial-gradient(28.81% 51.38%,48.05% 599.06%,#212b36 0,#000 100%);background:radial-gradient(48.05% 599.06% at 28.81% 51.38%,#212b36 0,#000 100%);-webkit-border-radius:8px;border-radius:8px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.stress .promo .promo_inner .promo_left,.stress .promo .promo_inner .promo_right{width:50%}.stress .promo .promo_inner .promo_right .promo_content{max-width:470px}.stress .promo .promo_inner .promo_right .promo_content p{font-size:24px;line-height:29px;color:#fff}.stress .promo .promo_inner .promo_right .promo_content p span{color:#ff5862}.stress .promo .promo_inner .promo_right .promo_content .text1{margin-bottom:15px}.stress .promo .promo_inner .promo_right .promo_content .text2{margin-bottom:10px}.stress .promo .promo_inner .promo_right .promo_link{font-size:20px;line-height:1;color:#8a0c1d;-webkit-transition:color .3s;-o-transition:color .3s;transition:color .3s}.stress .promo .promo_inner .promo_right .promo_link:hover{color:#ff5862}@media only screen and (max-width:1024px){.stress{padding:0 0 53px}.stress .stress_top{max-width:710px;margin:73px auto 5px}.stress .stress_top .text1,.stress .stress_top .text2{font-size:30px;line-height:36px}.stress .promo{height:250px}.stress .promo .promo_inner .promo_right .promo_content{max-width:346px}.stress .promo .promo_inner .promo_right .promo_content p{font-size:18px;line-height:22px}.stress .promo .promo_inner .promo_right .promo_content .text1{margin-bottom:15px}.stress .promo .promo_inner .promo_right .promo_content .text2{margin-bottom:10px}}@media only screen and (max-width:767px){.stress{padding:0 0 48px;max-width:320px;margin:0 auto}.stress .stress_top{margin:38px auto 17px}.stress .stress_top .text1,.stress .stress_top .text2{font-size:20px;line-height:24px}.stress .promo{height:auto}.stress .promo .promo_inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:17px;-webkit-box-sizing:border-box;box-sizing:border-box}.stress .promo .promo_inner .promo_left{width:100%;text-align:center}.stress .promo .promo_inner .promo_left h4{font-size:20px;line-height:24px;margin-bottom:10px}.stress .promo .promo_inner .promo_right{width:100%;margin-top:14px}.stress .promo .promo_inner .promo_right .promo_content p,.stress .promo .promo_inner .promo_right .promo_link{font-size:14px;line-height:17px}}.spoiler{padding:0 0 135px}.spoiler .spoiler_wrapper{position:relative;text-align:center}.spoiler .spoiler_wrapper h3{font-size:30px;line-height:1;color:#fff;margin-bottom:30px;font-family:Gotham Pro-Medium!important}.spoiler .spoiler_wrapper .spoiler_content{position:relative}.spoiler .spoiler_wrapper .spoiler_content .decor_img{position:relative;z-index:1}.spoiler .spoiler_wrapper .spoiler_content .decor_img img{margin-left:auto;margin-right:40px}.spoiler .spoiler_wrapper .spoiler_content .decor_text{position:absolute;right:0;bottom:95px;z-index:1;width:1499.72px;height:60px;background:-webkit-linear-gradient(179.91deg,#fb5ecf .33%,#00fff0 67.74%);background:-o-linear-gradient(179.91deg,#fb5ecf .33%,#00fff0 67.74%);background:linear-gradient(270.09deg,#fb5ecf .33%,#00fff0 67.74%);-webkit-transform:rotate(6deg);-ms-transform:rotate(6deg);transform:rotate(6deg);display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;padding-right:48px;font-size:30px;line-height:1;color:#000}.spoiler .spoiler_wrapper .spoiler_content .decor_text span{font-family:Gotham Pro-Medium!important}.spoiler .spoiler_wrapper .spoiler_content .decor_mob,.spoiler .spoiler_wrapper .spoiler_content .decor_text1_mob{display:none}.spoiler .spoiler_wrapper .spoiler_content .decor_mob span,.spoiler .spoiler_wrapper .spoiler_content .decor_text1_mob span{font-family:Gotham Pro-Medium!important}.spoiler .spoiler_wrapper .spoiler_content .decor_price{position:absolute;right:7px;bottom:-30px;z-index:0;width:771.44px;height:60px;background:-webkit-linear-gradient(26.69deg,#fb5ecf 44.93%,#7b0059 75.94%);background:-o-linear-gradient(26.69deg,#fb5ecf 44.93%,#7b0059 75.94%);background:linear-gradient(63.31deg,#fb5ecf 44.93%,#7b0059 75.94%);-webkit-transform:rotate(-6deg);-ms-transform:rotate(-6deg);transform:rotate(-6deg);text-align:left;font-size:48px;line-height:1;color:#000;padding-left:48px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.spoiler .spoiler_wrapper .spoiler_content .decor_price span{font-family:Gotham Pro-Medium!important;font-weight:700}@media only screen and (max-width:1024px){.spoiler{padding:0 0 10px}.spoiler .spoiler_wrapper h3{font-size:24px}.spoiler .spoiler_wrapper .spoiler_content .decor_text{position:absolute;right:0;bottom:85px;z-index:1;width:905px;height:50px;padding-right:48px;font-size:24px}.spoiler .spoiler_wrapper .spoiler_content .decor_price{position:absolute;right:7px;bottom:0;z-index:0;width:692px;height:50px;-webkit-transform:rotate(-6deg);-ms-transform:rotate(-6deg);transform:rotate(-6deg);text-align:left;padding-left:48px}}@media only screen and (min-width:768px) and (max-width:960px){.spoiler .spoiler_wrapper .spoiler_content .decor_text{bottom:70px;width:700px;font-size:20px}.spoiler .spoiler_wrapper .spoiler_content .decor_price{width:650px}}@media only screen and (max-width:767px){.spoiler{padding:36px 0 90px}.spoiler .spoiler_wrapper h3{font-size:20px}.spoiler .spoiler_wrapper .spoiler_content{max-width:286px;margin:0 auto}.spoiler .spoiler_wrapper .spoiler_content .decor_text{display:none}.spoiler .spoiler_wrapper .spoiler_content .decor_text1_mob{bottom:50px;-webkit-box-sizing:border-box;box-sizing:border-box;width:307.53px}.spoiler .spoiler_wrapper .spoiler_content .decor_text1_mob,.spoiler .spoiler_wrapper .spoiler_content .decor_text2_mob{position:absolute;right:-5px;z-index:1;height:30px;background:-webkit-linear-gradient(179.91deg,#fb5ecf .33%,#00fff0 67.74%);background:-o-linear-gradient(179.91deg,#fb5ecf .33%,#00fff0 67.74%);background:linear-gradient(270.09deg,#fb5ecf .33%,#00fff0 67.74%);-webkit-transform:rotate(6deg);-ms-transform:rotate(6deg);transform:rotate(6deg);display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;padding-right:10px;font-size:18px;line-height:1;color:#000}.spoiler .spoiler_wrapper .spoiler_content .decor_text2_mob{bottom:0;width:301.72px}.spoiler .spoiler_wrapper .spoiler_content .decor_text2_mob span{font-family:Gotham Pro-Medium!important}.spoiler .spoiler_wrapper .spoiler_content .decor_mob{display:block;bottom:20px}.spoiler .spoiler_wrapper .spoiler_content .decor_mob,.spoiler .spoiler_wrapper .spoiler_content .decor_price{position:absolute;right:0;z-index:0;-webkit-box-sizing:border-box;box-sizing:border-box;width:258.24px;height:30px;background:-webkit-linear-gradient(26.69deg,#fb5ecf 44.93%,#7b0059 75.94%);background:-o-linear-gradient(26.69deg,#fb5ecf 44.93%,#7b0059 75.94%);background:linear-gradient(63.31deg,#fb5ecf 44.93%,#7b0059 75.94%);-webkit-transform:rotate(-6deg);-ms-transform:rotate(-6deg);transform:rotate(-6deg)}.spoiler .spoiler_wrapper .spoiler_content .decor_price{bottom:-30px;text-align:left;font-size:24px;font-weight:700;line-height:1;letter-spacing:-1px;color:#000;padding-left:5px}}.gifts{background:url(https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/gifts_bg.jpg) top no-repeat;-webkit-background-size:cover;background-size:cover;padding:60px 0}.gifts .gifts_title{font-size:45px;line-height:54px;text-align:center;color:#ffda93;margin:0 0 10px;font-family:Gotham Pro-Medium!important}.gifts .gifts_subtitle{font-size:30px;line-height:36px;text-align:center;color:#fff;margin:0 0 35px;font-family:Gotham Pro}.gifts .gifts_list{-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}.gifts .gifts_list,.gifts .gifts_list .gifts_item{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.gifts .gifts_list .gifts_item{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-flex:0;-webkit-flex:0 0 -webkit-calc(25% - 40px);-ms-flex:0 0 calc(25% - 40px);flex:0 0 calc(25% - 40px)}.gifts .gifts_list .gifts_item .gift_link{text-decoration:none;cursor:pointer;display:block;-webkit-transition:color .3s;-o-transition:color .3s;transition:color .3s}.gifts .gifts_list .gifts_item .gift_link:active .gift_for,.gifts .gifts_list .gifts_item .gift_link:hover .gift_for{color:#ffda93}.gifts .gifts_list .gifts_item .gift_link:active img,.gifts .gifts_list .gifts_item .gift_link:hover img{-webkit-transform:scale(1.05);-ms-transform:scale(1.05);transform:scale(1.05)}.gifts .gifts_list .gifts_item .gift_link:active .gifts_item_img .mistletoe img,.gifts .gifts_list .gifts_item .gift_link:hover .gifts_item_img .mistletoe img{-webkit-transform:scale(1.25) translateY(-20px);-ms-transform:scale(1.25) translateY(-20px);transform:scale(1.25) translateY(-20px)}.gifts .gifts_list .gifts_item .gifts_item_img{position:relative;height:331px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:end;-webkit-align-items:flex-end;-ms-flex-align:end;align-items:flex-end}.gifts .gifts_list .gifts_item .gifts_item_img .img_main{position:relative;z-index:1}.gifts .gifts_list .gifts_item .gifts_item_img .img_main img{-webkit-transition:-webkit-transform .3s ease-in-out;transition:-webkit-transform .3s ease-in-out;-o-transition:transform .3s ease-in-out;transition:transform .3s ease-in-out;transition:transform .3s ease-in-out,-webkit-transform .3s ease-in-out;max-width:100%}.gifts .gifts_list .gifts_item .gifts_item_img .img_main.mistletoe img{-webkit-transform:scale(1.2) translateY(-20px);-ms-transform:scale(1.2) translateY(-20px);transform:scale(1.2) translateY(-20px)}.gifts .gifts_list .gifts_item .gift_for{font-size:24px;line-height:120%;color:#fff;min-height:60px;margin-top:15px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start}.gifts .gifts_list .gifts_item .gift_for,.gifts .gifts_list .gifts_item .gifts_btn{text-align:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}.gifts .gifts_list .gifts_item .gifts_btn{margin-top:78px;display:block;text-decoration:none;cursor:pointer;width:234px;height:89px;background:url(https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/gift_btn.svg) top no-repeat;-webkit-background-size:cover;background-size:cover;text-decoration:inherit;border:none;outline:none;position:relative;overflow:hidden;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease}.gifts .gifts_list .gifts_item .gifts_btn span{font-family:Gotham Pro-Medium!important;font-size:24px;line-height:26px;color:#000}.gifts .gifts_list .gifts_item .gifts_btn:active,.gifts .gifts_list .gifts_item .gifts_btn:hover{background:url(https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/gift_btn_hover.svg) top no-repeat;-webkit-background-size:cover;background-size:cover}.gifts .gifts_list .gifts_item .gifts_btn:active span,.gifts .gifts_list .gifts_item .gifts_btn:hover span{text-decoration:underline}.gifts .gifts_btn_list_mob{display:none}@media only screen and (max-width:1024px){.gifts .gifts_title{font-size:24px;line-height:29px}.gifts .gifts_list{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}.gifts .gifts_list .gifts_item .gifts_item_img{height:232px}.gifts .gifts_list .gifts_item .gift_for{font-size:20px;line-height:24px;min-height:50px}.gifts .gifts_list .gifts_item .gifts_btn{margin-top:52px;width:163px;height:62px}.gifts .gifts_list .gifts_item .gifts_btn span{font-size:20px;line-height:22px}}@media only screen and (max-width:767px){.gifts .gifts_title{font-size:20px;line-height:24px;text-align:center;margin:0 0 5px}.gifts .gifts_subtitle{font-size:18px;line-height:22px}.gifts .gifts_list{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;max-width:286px;margin:0 auto}.gifts .gifts_list .gifts_item{margin-top:14px;-webkit-box-flex:0;-webkit-flex:0 0 -webkit-calc(50% - 18px);-ms-flex:0 0 calc(50% - 18px);flex:0 0 calc(50% - 18px)}.gifts .gifts_list .gifts_item .gifts_item_img{position:relative;height:160px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:end;-webkit-align-items:flex-end;-ms-flex-align:end;align-items:flex-end}.gifts .gifts_list .gifts_item .gifts_item_img .img_main{position:relative;z-index:1}.gifts .gifts_list .gifts_item .gifts_item_img .img_main img{max-width:100%}.gifts .gifts_list .gifts_item .gift_for{font-size:18px;line-height:20px;text-align:center;min-height:60px;margin-top:15px}.gifts .gifts_list .gifts_item .gifts_btn{display:none}.gifts .gifts_btn_list_mob{-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;max-width:286px;margin:0 auto}.gifts .gifts_btn_list_mob,.gifts .gifts_btn_list_mob .list_item{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.gifts .gifts_btn_list_mob .list_item{-webkit-box-flex:0;-webkit-flex:0 0 -webkit-calc(50% - 10px);-ms-flex:0 0 calc(50% - 10px);flex:0 0 calc(50% - 10px)}.gifts .gifts_btn_list_mob .list_item .gifts_btn{margin-top:15px;display:block;text-decoration:none;cursor:pointer;width:135px;height:45px;background:url(https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/gift_btn_mob.svg) top no-repeat;-webkit-background-size:cover;background-size:cover;text-decoration:inherit;border:none;outline:none;position:relative;overflow:hidden;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;text-align:center;-webkit-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease}.gifts .gifts_btn_list_mob .list_item .gifts_btn span{font-family:Gotham Pro-Medium!important;font-size:18px;line-height:20px;color:#000}.gifts .gifts_btn_list_mob .list_item .gifts_btn:active,.gifts .gifts_btn_list_mob .list_item .gifts_btn:hover{background:url(https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/gift_btn_hover_mob.svg) top no-repeat}.gifts .gifts_btn_list_mob .list_item .gifts_btn:active span,.gifts .gifts_btn_list_mob .list_item .gifts_btn:hover span{text-decoration:underline}}.shopping{padding:40px 0}.shopping .shopping_list{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;padding:0 40px;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}.shopping .shopping_list,.shopping .shopping_list .shopping_list_item{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.shopping .shopping_list .shopping_list_item{-webkit-box-flex:0;-webkit-flex:0 0 -webkit-calc(33.33333% - 40px);-ms-flex:0 0 calc(33.33333% - 40px);flex:0 0 calc(33.33333% - 40px);-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}.shopping .shopping_list .shopping_list_item:nth-child(-n+3){margin-bottom:50px}.shopping .shopping_list .shopping_list_item .shopping_cart{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;text-decoration:none}.shopping .shopping_list .shopping_list_item .shopping_cart .shopping_cart_img{border-bottom:2px solid #ff5862;height:210px;margin-bottom:30px;-webkit-transition:-webkit-transform .3s ease-in-out;transition:-webkit-transform .3s ease-in-out;-o-transition:transform .3s ease-in-out;transition:transform .3s ease-in-out;transition:transform .3s ease-in-out,-webkit-transform .3s ease-in-out}.shopping .shopping_list .shopping_list_item .shopping_cart .shopping_cart_img img{max-width:100%;width:100%;max-height:100%;-o-object-position:bottom;object-position:bottom;-o-object-fit:contain;object-fit:contain}.shopping .shopping_list .shopping_list_item .shopping_cart .shopping_cart_text{display:inline-block;font-size:24px;line-height:100%;text-align:center;color:#fff;margin-top:auto;-webkit-transition:color .3s;-o-transition:color .3s;transition:color .3s;font-family:Gotham Pro-Medium!important}.shopping .shopping_list .shopping_list_item .shopping_cart:active .shopping_cart_img,.shopping .shopping_list .shopping_list_item .shopping_cart:hover .shopping_cart_img{-webkit-transform:scale(1.05);-ms-transform:scale(1.05);transform:scale(1.05)}.shopping .shopping_list .shopping_list_item .shopping_cart:active .shopping_cart_text,.shopping .shopping_list .shopping_list_item .shopping_cart:hover .shopping_cart_text{color:#ff5862}@media only screen and (min-width:768px) and (max-width:1024px){.shopping{padding:40px 0 50px}.shopping .shopping_list{padding:0}.shopping .shopping_list .shopping_list_item .shopping_cart .shopping_cart_img{height:172px;-webkit-box-sizing:border-box;box-sizing:border-box;margin-bottom:15px}.shopping .shopping_list .shopping_list_item .shopping_cart .shopping_cart_text{font-size:20px;line-height:1}}@media only screen and (max-width:767px){.shopping{padding:25px 0 65px}.shopping .shopping_wrapper{padding:0 20px}.shopping .shopping_title{font-size:30px;margin-bottom:61px}.shopping .shopping_list{padding:0}.shopping .shopping_list .shopping_list_item{-webkit-box-flex:0;-webkit-flex:0 0 -webkit-calc(50% - 15px);-ms-flex:0 0 calc(50% - 15px);flex:0 0 calc(50% - 15px)}.shopping .shopping_list .shopping_list_item:nth-child(-n+4){margin-bottom:39px}.shopping .shopping_list .shopping_list_item .shopping_cart .shopping_cart_img{height:135px;margin-bottom:16px}.shopping .shopping_list .shopping_list_item .shopping_cart .shopping_cart_img:hover .shopping_cart_img{-webkit-transform:none;-ms-transform:none;transform:none}.shopping .shopping_list .shopping_list_item .shopping_cart .shopping_cart_text{font-size:20px;letter-spacing:-1.5px}}.banner{max-width:1600px;margin:0 auto}.banner .inner{cursor:pointer;display:block;height:224px;width:100%;background:url(https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/banner_bg_ua.jpg) 50% 0 no-repeat}@media only screen and (max-width:1024px){.banner{background:#8a0c1d}.banner .inner{display:block;height:187px;width:100%;-webkit-background-size:cover;background-size:cover}}@media only screen and (max-width:960px){.banner{background:#8a0c1d}.banner .inner{display:block;height:187px;width:100%;background:url(https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/banner_bg_tab_ua.jpg) 50% 0 no-repeat;-webkit-background-size:cover;background-size:cover}}@media only screen and (max-width:767px){.banner .inner{margin:0 auto;-webkit-border-radius:8px;border-radius:8px;display:block;height:300px;width:320px;background:url(https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/banner_bg_mob_ua.jpg) 50% 0 no-repeat}}.about{padding:74px 0 60px;color:#637381}.about h1,.about h2,.about h3,.about h4{font-weight:700;margin-bottom:30px;color:#637381}.about p{margin-bottom:30px;font-size:14px;color:#637381}.about .about_top{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:relative}.about .about_top .top_right ul{display:block;list-style-type:disc;-webkit-margin-before:1em;margin-block-start:1em;-webkit-margin-after:1em;margin-block-end:1em;-webkit-margin-start:0;-moz-margin-start:0;margin-inline-start:0;-webkit-margin-end:0;-moz-margin-end:0;margin-inline-end:0;-webkit-padding-start:40px;-moz-padding-start:40px;padding-inline-start:40px}.about .about_top .top_right ul li:not(:last-child){margin-bottom:30px}.about .about_top .top_right ul li{font-size:14px}.about .about_top .top_left{margin-right:30px}.about .about_top .top_left,.about .about_top .top_right{-webkit-flex-basis:50%;-ms-flex-preferred-size:50%;flex-basis:50%}.about .about_top .shadow{position:absolute;width:100%;height:180px;bottom:0;background:-webkit-gradient(linear,left top,left bottom,from(transparent),color-stop(72.92%,#000));background:-webkit-linear-gradient(top,transparent,#000 72.92%);background:-o-linear-gradient(top,transparent 0,#000 72.92%);background:linear-gradient(180deg,transparent,#000 72.92%)}.about .about_bottom{display:none}.about .about_bottom .about_mob ul{display:block;list-style-type:disc;-webkit-margin-before:1em;margin-block-start:1em;-webkit-margin-after:1em;margin-block-end:1em;-webkit-margin-start:0;-moz-margin-start:0;margin-inline-start:0;-webkit-margin-end:0;-moz-margin-end:0;margin-inline-end:0;-webkit-padding-start:40px;-moz-padding-start:40px;padding-inline-start:40px}.about .about_bottom .about_mob ul li:not(:last-child){margin-bottom:30px}.about .about_bottom .about_mob ul li{font-size:14px}.about .about_btn_row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}.about .about_btn_row .btn_type3{width:220px;height:48px}.about .about_btn_row .btn_type3 span{font-family:Gotham Pro-Medium!important}@media only screen and (min-width:768px) and (max-width:1024px){.about{padding-top:45px;padding-bottom:65px}}@media only screen and (max-width:767px){.about{padding:45px 0;font-size:14px;line-height:17px}.about .about_top{max-width:286px;margin:0 auto}.about .about_top .top_left{margin:0;-webkit-flex-basis:auto;-ms-flex-preferred-size:auto;flex-basis:auto}.about .about_top .top_right{display:none}.about .about_bottom{max-width:300px;margin:0 auto}}.gifts{position:relative}.gifts .decor_string1{position:absolute;top:450px;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);z-index:0}.gifts .gifts_wrapper{position:relative;z-index:1}.gifts .gifts_wrapper .gifts_top .gifts_title{max-width:672px;margin:0 auto;font-family:Gotham Pro-Medium!important;font-size:36px;line-height:43px;text-align:center;color:#fff}.gifts .gifts_wrapper .gifts_top .gifts_subtitle{font-family:Gotham Pro-Medium!important;font-size:24px;line-height:29px;text-align:center;color:#8a0c1d;margin-top:15px;margin-bottom:34px}.gifts .gifts_wrapper .gifts_row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;padding-bottom:35px}.gifts .gifts_wrapper .gifts_row .gifts_item{-webkit-box-flex:0;-webkit-flex:0 1 -webkit-calc(50% - 15px);-ms-flex:0 1 calc(50% - 15px);flex:0 1 calc(50% - 15px)}.gifts .gifts_wrapper .gifts_row .gifts_item .gifts_card{position:relative;display:block;background:-webkit-linear-gradient(.14deg,#8a0c1d .1%,#ff5862 99.88%);background:-o-linear-gradient(.14deg,#8a0c1d .1%,#ff5862 99.88%);background:linear-gradient(89.86deg,#8a0c1d .1%,#ff5862 99.88%);-webkit-border-radius:8px;border-radius:8px;padding:3px;-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;text-decoration:none;-webkit-transition:-webkit-box-shadow .3s ease-in-out;transition:-webkit-box-shadow .3s ease-in-out;-o-transition:box-shadow .3s ease-in-out;transition:box-shadow .3s ease-in-out;transition:box-shadow .3s ease-in-out,-webkit-box-shadow .3s ease-in-out}.gifts .gifts_wrapper .gifts_row .gifts_item .gifts_card:active,.gifts .gifts_wrapper .gifts_row .gifts_item .gifts_card:hover{-webkit-box-shadow:0 -10px 15px -6px #00fff0,0 5px 15px 0 #fb5ecf,5px 0 15px 0 #00fff0,-5px 0 15px 0 #fb5ecf;box-shadow:0 -10px 15px -6px #00fff0,0 5px 15px 0 #fb5ecf,5px 0 15px 0 #00fff0,-5px 0 15px 0 #fb5ecf}.gifts .gifts_wrapper .gifts_row .gifts_item .gifts_card img{-webkit-border-radius:6px;border-radius:6px}.gifts .gifts_wrapper .gifts_row .gifts_item .gifts_card .card_text{position:absolute;bottom:10px;right:15px;font-size:14px;line-height:17px;color:#738397}.gifts .gifts_wrapper .gifts_row .gifts_item .item_title{font-size:20px;line-height:24px;color:#fff;font-family:Gotham Pro-Medium!important;margin-top:20px;margin-bottom:14px}.gifts .gifts_wrapper .gifts_row .gifts_item .item_text{font-size:16px;line-height:18px;color:#fff;margin-bottom:14px}.gifts .gifts_wrapper .gifts_row .gifts_item .item_link{cursor:pointer;text-decoration:none;font-size:14px;line-height:1;color:#8a0c1d;-webkit-transition:color .3s;-o-transition:color .3s;transition:color .3s}.gifts .gifts_wrapper .gifts_row .gifts_item .item_link:hover{color:#ff5862}.gifts .gifts_wrapper .gifts_comment{font-size:14px;line-height:17px;color:#738397;margin-top:7px}@media only screen and (max-width:1024px){.gifts .decor_string1{display:none}.gifts .gifts_wrapper .gifts_top .gifts_title{font-size:30px;line-height:36px}.gifts .gifts_wrapper .gifts_top .gifts_subtitle{font-size:20px;line-height:24px;margin-top:5px;margin-bottom:15px}.gifts .gifts_wrapper .gifts_row{padding-bottom:35px}.gifts .gifts_wrapper .gifts_row .gifts_item{-webkit-box-flex:0;-webkit-flex:0 1 -webkit-calc(50% - 15px);-ms-flex:0 1 calc(50% - 15px);flex:0 1 calc(50% - 15px)}.gifts .gifts_wrapper .gifts_row .gifts_item .gifts_card .card_text{right:10px;font-size:13px}.gifts .gifts_wrapper .gifts_row .gifts_item .item_title{font-size:18px;line-height:22px;margin-top:10px;margin-bottom:10px;min-height:46px}.gifts .gifts_wrapper .gifts_row .gifts_item .item_text{font-size:16px;line-height:19px;margin-bottom:10px}}@media only screen and (max-width:767px){.gifts .gifts_wrapper .gifts_top .gifts_title{font-size:20px;line-height:24px}.gifts .gifts_wrapper .gifts_top .gifts_subtitle{font-size:18px;line-height:22px;margin-top:5px;margin-bottom:15px}.gifts .gifts_wrapper .gifts_row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:0}.gifts .gifts_wrapper .gifts_row .gifts_item{-webkit-box-flex:0;-webkit-flex:none;-ms-flex:none;flex:none;margin-bottom:40px}.gifts .gifts_wrapper .gifts_row .gifts_item .gifts_card .card_text{right:10px;font-size:12px}.gifts .gifts_wrapper .gifts_row .gifts_item .item_title{font-size:16px;line-height:19px;padding:0 15px}.gifts .gifts_wrapper .gifts_row .gifts_item .item_text{font-size:14px;line-height:17px;padding:0 15px}.gifts .gifts_wrapper .gifts_row .gifts_item .item_link{line-height:17px;margin-left:15px}.gifts .gifts_wrapper .gifts_comment{font-size:12px;line-height:14px;margin-top:7px;padding:0 15px}}.brands{background:#8a0c1d;padding-top:87px;padding-bottom:46px}.brands .brands_wrapper .brands_top .brands_title{font-family:Gotham Pro-Medium!important;font-size:45px;line-height:54px;text-align:center;color:#ffda93}.brands .brands_wrapper .brands_top .brands_subtitle{font-family:Gotham Pro!important;font-size:30px;line-height:36px;text-align:center;color:#fff;margin-top:3px;margin-bottom:34px}.brands .brands_wrapper .brands_content .row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}.brands .brands_wrapper .brands_content .row:not(:last-child){margin-bottom:20px}.brands .brands_wrapper .brands_content .row .item{text-decoration:none;-webkit-box-flex:0;-webkit-flex:0 1 176px;-ms-flex:0 1 176px;flex:0 1 176px;height:100px;-webkit-border-radius:8px;border-radius:8px;border:2px solid #fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-transition:all .3s;-o-transition:all .3s;transition:all .3s}.brands .brands_wrapper .brands_content .row .item img{max-width:100%;max-height:100%}.brands .brands_wrapper .brands_content .row .item:active,.brands .brands_wrapper .brands_content .row .item:hover{-webkit-box-shadow:0 0 10px 5px hsla(0,0%,100%,.6),inset 0 0 5px hsla(0,0%,100%,.6);box-shadow:0 0 10px 5px hsla(0,0%,100%,.6),inset 0 0 5px hsla(0,0%,100%,.6)}.brands .brands_wrapper .brands_content_mob{display:none}.brands .brands_wrapper .brands_btn{width:300px;height:52px;margin:41px auto 0}.brands .brands_wrapper .brands_btn span{font-family:Gotham Pro-Medium!important;font-size:24px;line-height:1}@media only screen and (max-width:1024px){.brands{padding-top:54px}.brands .brands_wrapper .brands_top .brands_title{font-size:30px;line-height:30px}.brands .brands_wrapper .brands_top .brands_subtitle{font-size:20px;line-height:20px}.brands .brands_wrapper .brands_content .row:not(:last-child){margin-bottom:15px}.brands .brands_wrapper .brands_content .row .item{-webkit-box-flex:0;-webkit-flex:0 1 123px;-ms-flex:0 1 123px;flex:0 1 123px;height:70px}.brands .brands_wrapper .brands_content .row .item img{max-width:105px}.brands .brands_wrapper .brands_btn{width:251px;height:48px;margin:47px auto 0}}@media only screen and (max-width:767px){.brands{padding-top:32px}.brands .brands_wrapper{max-width:286px;margin:0 auto}.brands .brands_wrapper .brands_top .brands_title{font-size:20px;line-height:24px}.brands .brands_wrapper .brands_top .brands_subtitle{font-size:18px;line-height:22px}.brands .brands_wrapper .brands_content{display:none}.brands .brands_wrapper .brands_content_mob{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;max-width:286px;margin:0 auto}.brands .brands_wrapper .brands_content_mob .row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:33.333%}.brands .brands_wrapper .brands_content_mob .row:not(:last-child){margin-right:10px}.brands .brands_wrapper .brands_content_mob .row .item{text-decoration:none;height:47px;-webkit-border-radius:8px;border-radius:8px;border:2px solid #fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;margin-bottom:10px;-webkit-transition:border-color .3s;-o-transition:border-color .3s;transition:border-color .3s;-webkit-box-sizing:border-box;box-sizing:border-box}.brands .brands_wrapper .brands_content_mob .row .item img{max-width:74px;max-height:100%}.brands .brands_wrapper .brands_content_mob .row .item:active,.brands .brands_wrapper .brands_content_mob .row .item:hover{border-color:#00fff0}.brands .brands_wrapper .brands_btn{width:220px;height:48px;margin:20px auto 0}.brands .brands_wrapper .brands_btn span{font-size:18px}}.nygifts{padding-bottom:90px;padding-top:127px}.nygifts .promo{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.nygifts .promo .promo_left{position:relative;width:50%}.nygifts .promo .promo_left .promo_img-wr{position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.nygifts .promo .promo_right{width:50%}.nygifts .promo .promo_right .promo_content{max-width:470px}.nygifts .promo .promo_right .promo_content .text1{font-family:Gotham Pro-Medium!important;margin-bottom:28px;font-size:36px;line-height:40px;color:#ff5862}.nygifts .promo .promo_right .promo_content .text2{font-family:Gotham Pro-Medium!important;font-size:24px;line-height:26px;margin-bottom:15px;color:#fff}.nygifts .promo .promo_right .promo_link{font-family:Gotham Pro-Medium!important;cursor:pointer;text-decoration:none;font-size:20px;line-height:1;color:#8a0c1d;-webkit-transition:color .3s;-o-transition:color .3s;transition:color .3s}.nygifts .promo .promo_right .promo_link:hover{color:#ff5862}@media only screen and (max-width:1024px){.nygifts{padding:85px 0 40px}.nygifts .nygifts_top{max-width:710px;margin:73px auto 5px;font-size:30px;line-height:36px}.nygifts .promo{height:auto;padding:25px 0;-webkit-box-sizing:border-box;box-sizing:border-box}.nygifts .promo .promo_left img{max-width:230px}.nygifts .promo .promo_right .promo_content{max-width:293px}.nygifts .promo .promo_right .promo_content .text1{margin-bottom:17px;font-size:20px;line-height:22px}.nygifts .promo .promo_right .promo_content .text2{margin-bottom:10px;font-size:18px;line-height:20px}.nygifts .promo .promo_right .promo_link{cursor:pointer;text-decoration:none;font-size:20px;line-height:1;color:#8a0c1d}}@media only screen and (max-width:767px){.nygifts{padding:0}.nygifts .promo{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.nygifts .promo .promo_left{width:100%}.nygifts .promo .promo_left .promo_img-wr{position:static;-webkit-transform:none;-ms-transform:none;transform:none}.nygifts .promo .promo_left img{max-width:200px;margin:0 auto}.nygifts .promo .promo_right{width:100%;text-align:center}.nygifts .promo .promo_right .promo_content{max-width:254px;margin:0 auto;text-align:center}.nygifts .promo .promo_right .promo_content .text1{margin-top:29px;margin-bottom:5px;font-size:16px;line-height:19px}.nygifts .promo .promo_right .promo_content .text2{margin-bottom:5px;font-size:14px;line-height:17px}.nygifts .promo .promo_right .promo_link{font-size:14px;line-height:17px;text-align:center}}.subscribe{padding:277px 0 12px;position:relative}.subscribe .decor_string2{position:absolute;top:0;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.subscribe .subscribe_wrapper{max-width:383px;margin:0 auto}.subscribe .subscribe_wrapper .subscribe_btn{width:322px;height:52px;font-family:Gotham Pro-Medium!important;margin:0 auto}.subscribe .subscribe_wrapper .subscribe_socials{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-top:94px}.subscribe .subscribe_wrapper .subscribe_socials .text{color:#fff;font-family:Gotham Pro-Medium!important;font-size:20px;line-height:24px}.subscribe .subscribe_wrapper .subscribe_socials .links{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.subscribe .subscribe_wrapper .subscribe_socials .links .social_link{-webkit-border-radius:50%;border-radius:50%}.subscribe .subscribe_wrapper .subscribe_socials .links .face{margin-right:30px}.subscribe .subscribe_wrapper .subscribe_socials .links .face:active,.subscribe .subscribe_wrapper .subscribe_socials .links .face:hover{-webkit-box-shadow:0 0 15px 0 #ff5862;box-shadow:0 0 15px 0 #ff5862}.subscribe .subscribe_wrapper .subscribe_socials .links .insta:active,.subscribe .subscribe_wrapper .subscribe_socials .links .insta:hover{-webkit-box-shadow:0 0 15px 0 #8a0c1d;box-shadow:0 0 15px 0 #8a0c1d}@media only screen and (max-width:1024px){.subscribe{padding:49px 0 12px}.subscribe .decor_string2{display:none}.subscribe .subscribe_wrapper .subscribe_btn{width:250px;height:48px}.subscribe .subscribe_wrapper .subscribe_socials{margin-top:58px}}@media only screen and (max-width:767px){.subscribe{padding:42px 0 0}.subscribe .subscribe_wrapper .subscribe_btn{width:286px;height:48px;font-size:18px}.subscribe .subscribe_wrapper .subscribe_socials{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;text-align:center;margin-top:40px}.subscribe .subscribe_wrapper .subscribe_socials .text{font-size:16px;line-height:19px}.subscribe .subscribe_wrapper .subscribe_socials .links{margin-top:7px}.subscribe .subscribe_wrapper .subscribe_socials .links .face{margin-right:19px}.subscribe .subscribe_wrapper .subscribe_socials .links .face:active,.subscribe .subscribe_wrapper .subscribe_socials .links .face:hover{-webkit-box-shadow:0 0 15px 0 #ff5862;box-shadow:0 0 15px 0 #ff5862}.subscribe .subscribe_wrapper .subscribe_socials .links .insta:active,.subscribe .subscribe_wrapper .subscribe_socials .links .insta:hover{-webkit-box-shadow:0 0 15px 0 #8a0c1d;box-shadow:0 0 15px 0 #8a0c1d}}.happy{background:#ff5862}.happy__wrapper.wrap{padding:40px 0 48px}@media only screen and (max-width:1024px){.happy__wrapper.wrap{padding:30px 0 35px}}@media only screen and (max-width:767px){.happy__wrapper.wrap{padding:25px 16px 15px;max-width:320px}}.happy__title{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}@media only screen and (max-width:767px){.happy__title{-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;margin-bottom:10px}}.happy__title>div{position:relative;display:inline-block;width:500px}.happy__title>div>img{max-width:100%}@media only screen and (max-width:1024px){.happy__title>div{width:390px;margin-right:-64px}}@media only screen and (max-width:767px){.happy__title>div{width:236px;margin-right:0}}.happy__title>div span{position:absolute;right:0;bottom:26px;font:400 45px/54px Gotham Pro;color:#ffda93}@media only screen and (max-width:1024px){.happy__title>div span{font-size:32px;line-height:38px;bottom:40px}}@media only screen and (max-width:767px){.happy__title>div span{font-size:18px;line-height:22px;bottom:20px}}.happy__description{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-bottom:44px}@media only screen and (max-width:1024px){.happy__description{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-bottom:20px}}@media only screen and (max-width:767px){.happy__description{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}}.happy__description>div:first-child{margin-top:-30px}@media only screen and (max-width:1024px){.happy__description>div:first-child{margin-top:-10px}}@media only screen and (max-width:767px){.happy__description>div:first-child{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-top:0;position:relative}}@media only screen and (max-width:1024px){.happy__description>div:first-child>img{max-width:332px}}@media only screen and (max-width:767px){.happy__description>div:first-child>img{height:168px;width:210px;margin-left:-25px}}.happy__description>div:nth-child(2){padding:16px 0 0 30px}@media only screen and (max-width:1024px){.happy__description>div:nth-child(2){padding:0 0 0 10px}}@media only screen and (max-width:767px){.happy__description>div:nth-child(2){padding:0;margin-bottom:16px}}.happy__description>div:nth-child(2) p{margin-bottom:28px;font:400 24px/29px Gotham Pro}@media only screen and (max-width:1024px){.happy__description>div:nth-child(2) p{font-size:16px;line-height:19px;max-width:308px}}@media only screen and (max-width:767px){.happy__description>div:nth-child(2) p{font-size:14px;line-height:17px;max-width:100%;margin-bottom:16px}}.happy__description>div:nth-child(2) p:last-child{margin-bottom:0}.happy__description>div:nth-child(2) p>span{color:#fff}.happy__subtitle{max-width:790px;text-align:center;font-size:24px;line-height:29px;color:#fff;margin:0 auto 70px}@media only screen and (max-width:1024px){.happy__subtitle{font-size:20px;line-height:24px;margin-bottom:35px}}@media only screen and (max-width:767px){.happy__subtitle{font-size:14px;line-height:17px;text-align:left;margin-bottom:0;position:absolute;width:48%;right:0;top:23px}}@media only screen and (max-width:767px){.happy__subtitle--desktop{display:none}}.happy__subtitle--mobile{display:none}@media only screen and (max-width:767px){.happy__subtitle--mobile{display:block}}.happy__btn{width:322px;height:52px;margin:0 auto;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;font-size:24px;line-height:24px}@media only screen and (max-width:1024px){.happy__btn{width:266px;height:38px;font-size:20px;line-height:20px}}@media only screen and (max-width:767px){.happy__btn{height:48px;width:286px}}.bestsellers{background:url(https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/garland.png) no-repeat;background-position-y:240px;margin-bottom:90px}.bestsellers .bestsellers__title{font-size:45px;line-height:54px;text-align:center;color:#ed2349;margin-bottom:7px;font-family:Gotham Pro-Medium!important}.bestsellers__subtitle{font-size:30px;line-height:36px;text-align:center;color:#313998}.bestsellers__slider{margin:0 auto 30px;padding:0 20px}.bestsellers__btn{border:3px solid #e0283f;-webkit-border-radius:30px;border-radius:30px;width:300px;height:52px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin:0 auto;font-size:24px;line-height:24px;text-decoration:none;color:#e0283f}.bestsellers__btn:hover{-webkit-box-shadow:0 0 10px 5px rgba(224,40,63,.6);box-shadow:0 0 10px 5px rgba(224,40,63,.6);-webkit-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out}.bestsellers .slick-dots{margin-top:10px}.bestsellers .slick-dots li.slick-active button{background:#e0283f;border:2px solid #e0283f}.bestsellers .slick-dots li button{height:14px;width:14px;background-color:#fff;border:2px solid #313998}.bestsellers .slick-arrow{cursor:pointer;position:absolute;border:none;font-size:0;height:44px;width:22px;top:160px;outline:none;z-index:100;background:url(https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/arrow.png) no-repeat;-webkit-background-size:contain;background-size:contain}.bestsellers .slick-prev{left:0;-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}.bestsellers .slick-prev:hover{-webkit-transform:rotate(180deg) scale(1.1);-ms-transform:rotate(180deg) scale(1.1);transform:rotate(180deg) scale(1.1)}.bestsellers .slick-next{right:0}.bestsellers .slick-next:hover{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}.bestsellers .slick-list{padding-top:10px}.slider-item{outline:none;text-decoration:none;display:-webkit-box!important;display:-webkit-flex!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.slider-item:hover .slider-item__img{-webkit-transform:scale(1.05);-ms-transform:scale(1.05);transform:scale(1.05);-webkit-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out}.slider-item__img-wrapper{margin-bottom:34px;height:292px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:end;-webkit-align-items:flex-end;-ms-flex-align:end;align-items:flex-end;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:100%}.slider-item__img{max-width:100%}.slider-item__name{font-weight:700;font-size:20px;line-height:22px;text-align:center;color:#e0283f;margin-bottom:20px}.slider-item__description{font-size:18px;line-height:22px;text-align:center;color:#000;padding:0 4px}@media (max-width:1024px){.bestsellers{background-position-y:120px;margin-bottom:35px}.bestsellers .bestsellers__title{font-size:32px;line-height:38px}.bestsellers__subtitle{font-size:20px;line-height:24px}.bestsellers .slick-arrow{top:140px;height:30px;width:15px}.slider-item__name{font-size:18px;line-height:20px}.slider-item__description{font-size:16px;line-height:19px}}@media (max-width:767px){.bestsellers{background-position-y:120px}.bestsellers .bestsellers__title{font-size:20px;line-height:24px;margin-bottom:4px}.bestsellers__subtitle{font-size:18px;line-height:22px;margin-bottom:35px}.bestsellers__btn{width:219px;height:48px;font-size:18px;line-height:18px}.bestsellers__slider{max-width:320px;margin:0 auto 30px}.bestsellers .slick-dots li.slick-active button{background:#e0283f;border:1px solid #e0283f}.bestsellers .slick-dots li button{height:14px;width:14px;border:1px solid #e0283f}.slider-item__img-wrapper{margin-bottom:34px;height:150px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:end;-webkit-align-items:flex-end;-ms-flex-align:end;align-items:flex-end;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:100%}.slider-item__img{max-width:100%;height:100%;width:auto;-o-object-fit:contain;object-fit:contain}.slider-item__description{font-size:14px;line-height:17px}}.promo{padding:65px 0}.promo .promo__title{font-size:45px;line-height:54px;text-align:center;color:#ed2349;margin-bottom:7px;font-family:Gotham Pro-Medium!important}.promo__subtitle{font-size:30px;line-height:36px;text-align:center;color:#313998;margin-bottom:36px}.promo__content{-webkit-column-count:2;-moz-column-count:2;column-count:2}.promo-cart{-webkit-box-sizing:border-box;box-sizing:border-box;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;text-decoration:none;margin-bottom:14px}.promo-cart:hover{-webkit-box-shadow:0 0 20px rgba(0,0,0,.8);box-shadow:0 0 20px rgba(0,0,0,.8);-webkit-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out}.promo-cart:hover *{color:#ffda93!important}.promo-cart--1{background:url(https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/makeup.png) no-repeat;-webkit-background-size:cover;background-size:cover}.promo-cart--2{background:url(https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/sets.png) no-repeat;-webkit-background-size:cover;background-size:cover}.promo-cart--3{background:url(https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/hands-lips.png) no-repeat;-webkit-background-size:cover;background-size:cover}.promo-cart--4{background:url(https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/hair.png) no-repeat;-webkit-background-size:cover;background-size:cover}.promo-cart--5{background:url(https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/parfums.png) no-repeat;-webkit-background-size:cover;background-size:cover}.promo-cart--6{background:url(https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/aromas.png) no-repeat;-webkit-background-size:cover;background-size:cover}.promo-cart--big{height:357px;padding:55px 30px}.promo-cart--small{height:200px;padding:11px 30px}.promo-cart__title{max-width:300px;font-size:30px;line-height:36px;color:#fff;margin-bottom:8px}.promo-cart__sale{position:relative;font-size:48px;line-height:48px;color:#fff}.promo-cart__sub-text{position:absolute;top:6px;left:3px;font-weight:700;font-size:12px;line-height:12px;color:#fff}@media (max-width:1024px){.promo{padding:35px 0}.promo .promo__title{font-size:32px;line-height:38px}.promo__subtitle{font-size:20px;line-height:24px}.promo-cart--big{height:250px;padding:20px 10px}.promo-cart--small{height:140px;padding:12px}.promo-cart__title{max-width:200px;font-size:22px;line-height:26px}}@media (max-width:767px){.promo{padding:35px 0 40px}.promo .promo__title{font-size:20px;line-height:24px;margin-bottom:4px}.promo__subtitle{font-size:18px;line-height:22px;margin-bottom:35px}.promo__content{-webkit-column-count:1;-moz-column-count:1;column-count:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.promo-cart{max-width:320px;width:100%;margin:0 auto 10px}.promo-cart--1{-webkit-box-ordinal-group:-5;-webkit-order:-6;-ms-flex-order:-6;order:-6}.promo-cart--2{-webkit-box-ordinal-group:-3;-webkit-order:-4;-ms-flex-order:-4;order:-4}.promo-cart--2 .promo-cart__title{max-width:160px;margin-bottom:0}.promo-cart--3{-webkit-box-ordinal-group:-1;-webkit-order:-2;-ms-flex-order:-2;order:-2}.promo-cart--3 .promo-cart__title{max-width:160px}.promo-cart--4{-webkit-box-ordinal-group:-4;-webkit-order:-5;-ms-flex-order:-5;order:-5}.promo-cart--5{-webkit-box-ordinal-group:-2;-webkit-order:-3;-ms-flex-order:-3;order:-3}.promo-cart--6{-webkit-box-ordinal-group:0;-webkit-order:-1;-ms-flex-order:-1;order:-1}.promo-cart--big{height:230px;padding:20px 17px}.promo-cart--small{height:130px;padding:10px 17px}.promo-cart__title{max-width:185px;font-size:20px;line-height:24px}}.maraphone{position:relative;background:url(https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/maraphone_bg.jpg) top no-repeat;-webkit-background-size:cover;background-size:cover;height:850px;padding:72px 0 55px;overflow:hidden;-webkit-box-sizing:border-box;box-sizing:border-box}.maraphone .maraphone_wrapper .maraphone_title{font-family:Gotham Pro-Medium!important;font-size:45px;line-height:54px;text-align:center;color:#ffda93;margin-bottom:10px}.maraphone .maraphone_wrapper .maraphone_subtitle{font-size:30px;line-height:36px;text-align:center;color:#fff;margin-bottom:48px}.maraphone .maraphone_wrapper .right{max-width:500px;margin-left:auto;margin-right:20px;position:relative}.maraphone .maraphone_wrapper .right .text{font-family:Gotham Pro;font-size:24px;line-height:29px;color:#fff}.maraphone .maraphone_wrapper .right .text:not(:last-of-type){margin-bottom:20px}.maraphone .maraphone_wrapper .right .text:last-of-type{margin-bottom:50px}.maraphone .maraphone_wrapper .right .maraphone_link{text-decoration:none;font-family:Gotham Pro-Medium!important;font-size:20px;line-height:1;color:#ffda93;cursor:pointer;-webkit-transition:color .3s;-o-transition:color .3s;transition:color .3s}.maraphone .maraphone_wrapper .right .maraphone_link:hover{color:#fff}.maraphone .maraphone_wrapper .right .subscribe_socials{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-top:38px}.maraphone .maraphone_wrapper .right .subscribe_socials .text{color:#fff;font-family:Gotham Pro-Medium!important;font-size:20px;line-height:24px;max-width:260px}.maraphone .maraphone_wrapper .right .subscribe_socials .links{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:end;-webkit-align-items:end;-ms-flex-align:end;align-items:end}.maraphone .maraphone_wrapper .right .subscribe_socials .links .social_link{-webkit-border-radius:50%;border-radius:50%}.maraphone .maraphone_wrapper .right .subscribe_socials .links .face{margin-right:38px}.maraphone .maraphone_wrapper .right .subscribe_socials .links .face:active,.maraphone .maraphone_wrapper .right .subscribe_socials .links .face:hover,.maraphone .maraphone_wrapper .right .subscribe_socials .links .insta:active,.maraphone .maraphone_wrapper .right .subscribe_socials .links .insta:hover{-webkit-box-shadow:0 0 15px 0 #ffda93;box-shadow:0 0 15px 0 #ffda93}.maraphone .subscribe_mob{display:none}@media only screen and (max-width:1024px){.maraphone{height:526px;padding:45px 0;background:url(https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/maraphone_bg_1024.png) top no-repeat;-webkit-background-size:cover;background-size:cover}.maraphone .maraphone_wrapper .maraphone_title{font-size:32px;line-height:38px}.maraphone .maraphone_wrapper .maraphone_subtitle{font-size:20px;line-height:24px;text-align:center;color:#fff;margin-bottom:44px}.maraphone .maraphone_wrapper .right{max-width:322px}.maraphone .maraphone_wrapper .right .text{font-size:16px;line-height:19px}.maraphone .maraphone_wrapper .right .text:not(:last-of-type){margin-bottom:20px}.maraphone .maraphone_wrapper .right .text:last-of-type{margin-bottom:29px}.maraphone .maraphone_wrapper .right .maraphone_link{font-size:18px}.maraphone .maraphone_wrapper .right .subscribe_socials{margin-top:29px}.maraphone .maraphone_wrapper .right .subscribe_socials .text{font-size:16px;line-height:19px;max-width:200px}.maraphone .maraphone_wrapper .right .subscribe_socials .links .face{margin-right:25px}.maraphone .maraphone_wrapper .right .subscribe_socials .links .face img,.maraphone .maraphone_wrapper .right .subscribe_socials .links .insta img{width:37px;height:37px}}@media only screen and (max-width:767px){.maraphone{background:url(https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/maraphone_bg_768.png) top no-repeat;-webkit-background-size:cover;background-size:cover;padding:30px 0;height:670px;margin-top:-1px;-webkit-box-sizing:border-box;box-sizing:border-box;margin-bottom:80px;overflow:initial}.maraphone .maraphone_wrapper{padding:0 14px}.maraphone .maraphone_wrapper .maraphone_title{font-size:20px;line-height:24px;margin-bottom:10px}.maraphone .maraphone_wrapper .maraphone_subtitle{font-size:18px;line-height:22px;margin-bottom:26px}.maraphone .maraphone_wrapper .maraphone_subtitle span{white-space:nowrap}.maraphone .maraphone_wrapper .right{max-width:none;margin:0}.maraphone .maraphone_wrapper .right .text{font-size:14px;line-height:17px;letter-spacing:-.1px}.maraphone .maraphone_wrapper .right .text:last-of-type,.maraphone .maraphone_wrapper .right .text:not(:last-of-type){margin-bottom:10px}.maraphone .maraphone_wrapper .right .maraphone_link{font-size:14px}.maraphone .maraphone_wrapper .right .subscribe_socials{display:none}.maraphone .subscribe_mob{display:block;background:#ff5762;width:100%;height:80px;position:absolute;bottom:-80px;z-index:1}.maraphone .subscribe_mob .subscribe_socials{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;max-width:286px;margin:0 auto}.maraphone .subscribe_mob .subscribe_socials .text{color:#fff;font-size:14px;line-height:17px;max-width:143px;margin-right:27px}.maraphone .subscribe_mob .subscribe_socials .links{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:end;-webkit-align-items:end;-ms-flex-align:end;align-items:end}.maraphone .subscribe_mob .subscribe_socials .links .social_link{-webkit-border-radius:50%;border-radius:50%}.maraphone .subscribe_mob .subscribe_socials .links .face{margin-right:16px}.maraphone .subscribe_mob .subscribe_socials .links .face:active,.maraphone .subscribe_mob .subscribe_socials .links .face:hover,.maraphone .subscribe_mob .subscribe_socials .links .insta:active,.maraphone .subscribe_mob .subscribe_socials .links .insta:hover{-webkit-box-shadow:0 0 15px 0 #ffda93;box-shadow:0 0 15px 0 #ffda93}}@media only screen and (min-width:768px) and (max-width:1024px){.wrap{min-width:320px;max-width:720px!important;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0 auto}}@media only screen and (max-width:767px){.wrap{min-width:320px;max-width:1024px!important;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0 auto}}
 </style>
-<div class="landing-body">
-    <section class="head_qwe">
-        <div class="in_qwe">
-            <div class="over_qwe">
-                <div class="head_block_qwe">
-                    <div class="somethig_special2_qwe">онлайн шопингуй!</div>
-
-                    <div class="somethig_special_qwe">Дома кайфуй,</div>
-
-                    <div class="head_mob">Ой, что несется!</div>
-
-                    <div class="head_left_qwe">
-                        <div class="head_r1_qwe">BLACK</div>
-
-                        <div class="head_r2_qwe">FRIDAY</div>
-
-                        <div class="head_r3_qwe"><a class="btn_type2 button" href="https://parfums.ua/markdowned">Погнали
-                            на сейл</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="second_qwe" style="display:none">
-        <div class="in_qwe">
-            <div class="over_qwe">
-                <div class="pink_qwe">Кайфец по-черному!</div>
-
-                <div class="title_qwe">Забирай свой гарантированный подарок</div>
-
-                <div class="second_block_qwe"><a
-                        href="https://parfums.ua/promo/detail/black-friday-2020-garantirovannyy-podarok">
-                    <div class="second_block_in_qwe">
-                        <p><span>Только сегодня, 27.11</span>, сделай заказ в PARFUMS на сумму от 700 грн &ndash; <span>получи гарантированный подарок</span>
-                            на выбор.</p>
-
-                        <p>Но сохраняй спокойствие, когда увидишь эти подарочки 😏 Они ооочень классные!</p>
-                        <span class="pink_qwe">Подробнее &gt;</span></div>
-                </a></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="third_qwe">
-        <div class="in_qwe">
-            <div class="over_qwe">
-                <div class="title_qwe">Здесь настоящий отвал башки! Самые крутые розыгрыши года 😱</div>
-
-                <div class="pink_qwe">Подарки от брендов, которые вас очень любят</div>
-
-                <div class="third_items_qwe">
-                    <div class="third_item_qwe third_item1_qwe">
-                        <div class="third_item_border_qwe"><a
-                                href="https://parfums.ua/promo/detail/rozygrysh-iphone-12-128gb-ot-brendov-persil-perwoll-silan-v-podarok">
-                            <div class="third_item_in_qwe"><span>iPhone 12 128GB Black*</span></div>
-                        </a></div>
-
-                        <div class="text1">Хедлайнер черной вечеринки &ndash; 12-й айфон!</div>
-
-                        <div class="text2">Ваша мечта может стать реальностью! Условие простое: закажи на 900 грн, в
-                            чеке должен быть товар брендов Persil, Perwoll, Silan
-                        </div>
-                        <a class="pink_qwe"
-                           href="https://parfums.ua/promo/detail/rozygrysh-iphone-12-128gb-ot-brendov-persil-perwoll-silan-v-podarok">Подробнее
-                            &gt;</a></div>
-
-                    <div class="third_item_qwe third_item2_qwe">
-                        <div class="third_item_border_qwe"><a
-                                href="https://parfums.ua/promo/detail/rozygrysh-televizor-lg-ot-brendov-vichy-la-roche-posay-v-podarok">
-                            <div class="third_item_in_qwe"><span>Телевизор LG 49NANO806NA*</span></div>
-                        </a></div>
-
-                        <div class="text1">Вот это кайф! Можно выиграть Smart TV</div>
-
-                        <div class="text2">Как принять участие? Сделай заказ на 1000 грн, в чеке должен быть один товар
-                            брендов Vichy или La Roche-Posay
-                        </div>
-                        <a class="pink_qwe"
-                           href="https://parfums.ua/promo/detail/rozygrysh-televizor-lg-ot-brendov-vichy-la-roche-posay-v-podarok">Подробнее
-                            &gt;</a></div>
-
-                    <div class="third_item_qwe third_item3_qwe">
-                        <div class="third_item_border_qwe"><a
-                                href="https://parfums.ua/promo/detail/rozygrysh-posudomoechnaya-mashina-ot-brendov-air-wick-finish-vanish-cillit-bang-v-podarok">
-                            <div class="third_item_in_qwe"><span>BOSCH SMV46AX00E чи<br/>
-BOSCH SMS40D18EU*</span></div>
-                        </a></div>
-
-                        <div class="text1">Сенсация! Разыгрываем посудомойку</div>
-
-                        <div class="text2">Хочешь ее выиграть? Заказывай на 1000 грн, и захвати какой-то товар брендов
-                            Air Wick, Finish, Vanish, Cillit Bang
-                        </div>
-                        <a class="pink_qwe"
-                           href="https://parfums.ua/promo/detail/rozygrysh-posudomoechnaya-mashina-ot-brendov-air-wick-finish-vanish-cillit-bang-v-podarok">Подробнее
-                            &gt;</a></div>
-
-                    <div class="third_item_qwe third_item4_qwe">
-                        <div class="third_item_border_qwe"><a
-                                href="https://parfums.ua/promo/detail/rozygrysh-robot-pylesos-xiaomi-ot-brenda-insight-v-podarok">
-                            <div class="third_item_in_qwe"><span>Xiaomi Mi Robot Vacuum-Mop 1С STYTJ01ZHM*</span></div>
-                        </a></div>
-
-                        <div class="text1">Шикуем дальше! Кому робот-пылесос?</div>
-
-                        <div class="text2">Попробуй победить! Заказывай на 800 грн, а в чеке должен быть любой товар
-                            бренда Insight
-                        </div>
-                        <a class="pink_qwe"
-                           href="https://parfums.ua/promo/detail/rozygrysh-robot-pylesos-xiaomi-ot-brenda-insight-v-podarok">Подробнее
-                            &gt;</a></div>
-
-                    <div class="third_item_qwe third_item5_qwe">
-                        <div class="third_item_border_qwe"><a
-                                href="https://parfums.ua/promo/detail/rozygrysh-professional-nyy-parovoy-stayler-dlya-volos-ot-brenda-l-oreal-professionnel-v-podarok">
-                            <div class="third_item_in_qwe"><span>L&#39;Oreal Professionnel<br/>
-Steampod 3.0 Steam Styler White*</span></div>
-                        </a></div>
-
-                        <div class="text1">А тут прямо в сердечко! <span style="color: red;">&hearts;</span>
-                            Стайлер-легенда
-                        </div>
-
-                        <div class="text2">Девушки пишут, что он бомбезный! Хочешь такой? Сделай заказ на 550 грн, и
-                            захвати товар L&#39;Oreal Professionnel
-                        </div>
-                        <a class="pink_qwe"
-                           href="https://parfums.ua/promo/detail/rozygrysh-professional-nyy-parovoy-stayler-dlya-volos-ot-brenda-l-oreal-professionnel-v-podarok">Подробнее
-                            &gt;</a></div>
-
-                    <div class="third_item_qwe third_item6_qwe">
-                        <div class="third_item_border_qwe"><a
-                                href="https://parfums.ua/promo/detail/rozygrysh-gril-tefal-optigrill-elite-ot-brendov-pupa-artdeco-v-podarok">
-                            <div class="third_item_in_qwe"><span>TEFAL OptiGrill Elite GC750D30*</span></div>
-                        </a></div>
-
-                        <div class="text1">Эмоции зашкаливают! Электрогриль надо?</div>
-
-                        <div class="text2">Испытай удачу! Покупай на PARFUMS от 800 грн, и закинь в корзину товар Pupa
-                            или Artdeco. Вуаля &ndash; ты в игре!
-                        </div>
-                        <a class="pink_qwe"
-                           href="https://parfums.ua/promo/detail/rozygrysh-gril-tefal-optigrill-elite-ot-brendov-pupa-artdeco-v-podarok">Подробнее
-                            &gt;</a></div>
-
-                    <div class="third_item_qwe third_item7_qwe">
-                        <div class="third_item_border_qwe"><a
-                                href="https://parfums.ua/promo/detail/rozygrysh-b-yuti-nabor-ot-brenda-bourjois-v-podarok">
-                            <div class="third_item_in_qwe"><span>&nbsp;</span></div>
-                        </a></div>
-
-                        <div class="text1">Розыгрыш 3 бомбезных бьюти-боксов от Bourjois</div>
-
-                        <div class="text2">Клик-клик &ndash; и ты автоматически участвуешь в розыгрыше! Чек на любую
-                            сумму, главное, чтобы в нем был товар Bourjois
-                        </div>
-                        <a class="pink_qwe"
-                           href="https://parfums.ua/promo/detail/rozygrysh-b-yuti-nabor-ot-brenda-bourjois-v-podarok">Подробнее
-                            &gt;</a></div>
-
-                    <div class="third_item_qwe third_item8_qwe">
-                        <div class="third_item_border_qwe"><a
-                                href="https://parfums.ua/promo/detail/rozygrysh-fen-braun-ot-brendov-pantene-pro-v-herbal-essences-head-shoulders-v-podarok">
-                            <div class="third_item_in_qwe"><span>BRAUN HD 585*</span></div>
-                        </a></div>
-
-                        <div class="text1">Качаем по-черному! Разыгрываем 15 фенов</div>
-
-                        <div class="text2">Аукцион щедрости не заканчивается! Разыгрываем 15 фенов среди чеков от 500
-                            грн. Только захвати товар этих брендов!
-                        </div>
-                        <a class="pink_qwe"
-                           href="https://parfums.ua/promo/detail/rozygrysh-fen-braun-ot-brendov-pantene-pro-v-herbal-essences-head-shoulders-v-podarok">Подробнее
-                            &gt;</a></div>
-                </div>
-
-                <div class="third_note-qwe">* Возможны незначительные несоответствия подарков с фото, представленными на
-                    этой странице
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="fifth_qwe">
-        <div class="in_qwe">
-            <div class="over_qwe">
-                <div class="title_qwe">Залетай на сейл!</div>
-
-                <div class="pink_qwe">Скидки до -80% на топовые бренды</div>
-
-                <div class="fifth_items_qwe">
-                    <div class="fifth_item1_qwe"><a href="https://parfums.ua/brand/montale">&nbsp;</a></div>
-
-                    <div class="fifth_item2_qwe"><a href="https://parfums.ua/brand/mancera-parfum">&nbsp; </a></div>
-
-                    <div class="fifth_item3_qwe"><a href="https://parfums.ua/brand/tiziana-terenzi">&nbsp; </a></div>
-
-                    <div class="fifth_item4_qwe"><a href="https://parfums.ua/brand/escentric-molecules">&nbsp; </a>
-                    </div>
-
-                    <div class="fifth_item5_qwe"><a href="https://parfums.ua/brand/franck-boclet">&nbsp;</a></div>
-
-                    <div class="fifth_item6_qwe"><a href="https://parfums.ua/brand/loreal-professionnel">&nbsp;</a>
-                    </div>
-
-                    <div class="fifth_item7_qwe"><a href="https://parfums.ua/brand/chi">&nbsp; </a></div>
-
-                    <div class="fifth_item8_qwe"><a href="https://parfums.ua/brand/brelil">&nbsp; </a></div>
-
-                    <div class="fifth_item9_qwe"><a href="https://parfums.ua/brand/insight">&nbsp;</a></div>
-
-                    <div class="fifth_item10_qwe"><a href="https://parfums.ua/brand/paul-mitchell">&nbsp; </a></div>
-
-                    <div class="fifth_item11_qwe"><a href="https://parfums.ua/brand/vichy">&nbsp; </a></div>
-
-                    <div class="fifth_item12_qwe"><a href="https://parfums.ua/brand/la-roche-posay">&nbsp;</a></div>
-
-                    <div class="fifth_item13_qwe"><a href="https://parfums.ua/brand/clarins">&nbsp;</a></div>
-
-                    <div class="fifth_item14_qwe"><a href="https://parfums.ua/brand/babor">&nbsp; </a></div>
-
-                    <div class="fifth_item15_qwe"><a href="https://parfums.ua/brand/bourjois">&nbsp; </a></div>
-
-                    <div class="fifth_item16_qwe"><a href="https://parfums.ua/brand/chanel">&nbsp;</a></div>
-
-                    <div class="fifth_item17_qwe"><a href="https://parfums.ua/brand/hermes">&nbsp; </a></div>
-
-                    <div class="fifth_item18_qwe"><a href="https://parfums.ua/brand/dolce-gabbana">&nbsp; </a></div>
-
-                    <div class="fifth_item19_qwe"><a href="https://parfums.ua/brand/hugo-boss">&nbsp; </a></div>
-
-                    <div class="fifth_item20_qwe"><a href="https://parfums.ua/brand/antonio-banderas">&nbsp; </a></div>
-
-                    <div class="fifth_item21_qwe"><a href="https://parfums.ua/brand/nyx">&nbsp; </a></div>
-
-                    <div class="fifth_item22_qwe"><a href="https://parfums.ua/brand/pupa">&nbsp;</a></div>
-
-                    <div class="fifth_item23_qwe"><a href="https://parfums.ua/brand/artdeco">&nbsp; </a></div>
-
-                    <div class="fifth_item24_qwe"><a href="https://parfums.ua/brand/persil">&nbsp; </a></div>
-
-                    <div class="fifth_item25_qwe"><a href="https://parfums.ua/brand/finish">&nbsp;</a></div>
-                </div>
-
-                <div class="fifth_but_qwe">
-                    <div class="black_but_border"><a class="btn_black_qwe button" href="https://parfums.ua/markdowned">Все
-                        бренды</a></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="sixth_qwe">
-        <div class="in_qwe">
-            <div class="over_qwe">
-                <div class="sixth_in_qwe">
-                    <div class="green_title_qwe">Готовь новогодние подарки уже сейчас!</div>
-
-                    <div class="sixth_txt_qwe">Выбери родным праздничные наборы под елку</div>
-                    <a class="pink_qwe"
-                       href="https://parfums.ua/markdowned/1/arrival_desc/20/vid_produkcii=nabor-promo=black_friday_2020">Выбрать
-                        &gt;</a></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="delivery_ban_qwe"><a href="https://parfums.ua/promotions/dostavka-krasoti">&nbsp;</a></section>
-
-    <section class="seventh_qwe">
-        <div class="in_qwe">
-            <div class="over_qwe">
-                <div class="seventh_but_qwe"><a class="btn_type2 button" href="https://parfums.ua/markdowned">Гоу на
-                    шопинг!</a></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="social_qwe">
-        <div class="in_qwe">
-            <div class="over_qwe">
-                <div class="social_in_qwe">
-                    <div class="social_txt_qwe">Подписывайся на наши соцсети</div>
-
-                    <div class="social_ico_qwe"><a href="https://www.facebook.com/PARFUMS.UA"><img alt="facebook"
-                                                                                                   src="https://cdn.parfums.ua/public/upload/promotionpage/test/fb.png"/></a>
-                        <a href="https://www.instagram.com/parfumsua/"><img alt="instagram"
-                                                                            src="https://cdn.parfums.ua/public/upload/promotionpage/test/insta.png"/></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="about">
-        <div class="about_wrapper wrap in_qwe">
-            <div class="about_top about_height_qwe">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script><script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script><script src="https://cdnjs.cloudflare.com/ajax/libs/JQuery-Snowfall/1.7.4/snowfall.jquery.min.js" defer></script><script src="https://cdnjs.cloudflare.com/ajax/libs/JQuery-Snowfall/1.7.4/snowfall.min.js" defer></script>
+<div class="saint_nikolay2020 container">
+    <section class="showcase">
+        <div class="showcase_top">
+            <div class="top_wrapper wrap">
                 <div class="top_left">
-                    <h1>Что такое Черная пятница</h1>
+                    <div class="miracle"><img alt="" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/miracle_time.png" /></div>
 
-                    <p>Black Friday пришла к нам из США - страны, знающей толк в культуре потребления. Американская
-                        традиция устраивать Блэк Фрайдей прижилась и у нас, хотя на украинском рынке она наиболее широко
-                        представлена именно на онлайн-платформах. Как бы то ни было, настоящие любители шопинга уже с
-                        начала ноября (а может, и раньше) строят грандиозные планы на покупки и предвкушают распродажи
-                        Черной пятницы.</p>
+                    <div class="percent"><img alt="" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/80percent.png" /></div>
 
-                    <h2>Любопытные факты</h2>
-
-                    <p>Ежегодно в период распродажи Блекфрайдей покупатели тратят крупные суммы, которые по подсчетам
-                        составляют более 50 миллиардов долларов! Да-да, как ВВП небольшого европейского государства,
-                        например Литвы или Болгарии.</p>
-
-                    <p>Черная пятница в Украине имеет свои особенности. Многие сотрудники в этот день норовят взять
-                        больничный или выходной, чтобы в полной мере насладиться шопингом. Некоторым счастливчикам это
-                        удается. И только работникам сферы торговли рассчитывать на отпуск в Black Friday не
-                        приходится.</p>
-
-                    <p>Вслед за головокружительными акциями Черной пятницы следует еще одно событие - Киберпонедельник.
-                        Но откладывать желанные покупки до понедельника слишком рискованно, ведь ассортимент товаров не
-                        резиновый.</p>
-
-                    <p>Некоторые безумцы накануне Блэк Фрайдей несколько дней ночуют перед гипермаркетами, чтобы первыми
-                        попасть внутрь и забрать долгожданные товары. Согласитесь, куда удобнее поставить будильник на
-                        полночь и быстрее всех заглянуть на любимый сайт за выгодными покупками.</p>
-                </div>
-
-                <div class="top_right">
-                    <h2>Блэк Фрайдей на PARFUMS</h2>
-
-                    <p>&laquo;Черная пятница 2020 Украина&raquo; будет проходить 27 ноября. Вот тогда-то и начнется
-                        самое интересное, так как ее формат предполагает не просто скидки, а настоящий обвал цен. Без
-                        сомнений, это самый подходящий день, чтобы порадовать себя и близких крутыми обновками. Да еще
-                        получить отличную возможность приобрести много-много подарков к зимним праздникам. И не будем
-                        сбрасывать со счетов азарт предстоящего мероприятия, ведь лучшее получит тот, кто быстрее и
-                        проворнее остальных.</p>
-
-                    <p><b>PARFUMS делится советом:</b> чтобы остаться довольным покупками на 100%, заранее проявите
-                        смекалку. Например, прежде чем с головой нырнуть в удивительный мир Black Friday 2020,
-                        определите свой бюджет. Затем зайдите в личный кабинет и добавьте в список избранного то, что
-                        приглянулось. Но учтите: тяжело предугадать все. Тем более в день Х, когда на вашем пути могут
-                        встретиться другие предложения, от которых отказаться будет ой как непросто. Поэтому на всякий
-                        случай выделите экстрафонд и постарайтесь не потерять голову :)</p>
-
-                    <p>А мы уже подготовились очень основательно и раскрываем вам некоторые детали:</p>
-
-                    <ul>
-                        <li>В нашей Черной пятнице принимают участие все категории: &laquo;Парфюмерия&raquo;, &laquo;Волосы&raquo;,
-                            &laquo;Макияж&raquo;, &laquo;Уход за лицом&raquo;, &laquo;Все для дома&raquo;, &laquo;Детям
-                            и мамам&raquo; и т.д.
-                        </li>
-                        <li>Скидки в Черную пятницу будут распространяться на множество брендовых бестселлеров.</li>
-                        <li>Наш удобный интерфейс в вашем полном распоряжении.</li>
-                        <li>Еще вас ждут приятные гарантированные подарки.</li>
-                        <li>Все заказы мы как можно скорее доставим в любой уголок страны. Так что, праздник шопинга
-                            &laquo;Черная пятница&raquo; Киев и другие города Украины встретят вместе.
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="shadow" style="display: none;">&nbsp;</div>
+                    <p class="text2">Здійсни свої б&rsquo;юті-бажання</p>
+                    <a class="showcase_btn btn_type1 btn_300_48" href="https://parfums.ua/ua/markdowned/1/discount">Хочу-хочу!</a></div>
             </div>
+            <a class="showcase_btn_mob btn_type1 btn_300_48" href="https://parfums.ua/ua/markdowned/1/discount">Хочу-хочу!</a></div>
 
-            <div class="about_bottom">
-                <p>Помимо всевозможных акций, затеваются классные активности, среди которых розыгрыши (мы знаем, как вы
-                    их любите). Чтобы ничего не пропустить, обязательно следите за последними новостями на почте и в
-                    соцсетях.</p>
+        <div class="showcase_bottom">
+            <div class="showcase_bottom_bg"><img alt="" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/apple_watch.png" /></div>
 
-                <p>Желаем яркой Черной пятницы!</p>
+            <div class="showcase_bottom_bg_tab"><img alt="" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/apple_watch_tab.png" /></div>
 
-                <h3>Часто задаваемые вопросы о Black Friday</h3>
+            <div class="showcase_bottom_bg_mob"><img alt="" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/Apple_Watch_mob.png" /></div>
 
-                <h3>Что такое черная пятница?</h3>
+            <div class="wrap">
+                <p class="showcase_bottom_title">Чудеса трапляються!</p>
 
-                <p>Black Friday - главная распродажа года, которая пришла к нам из США и стала мегапопулярной во многих
-                    странах мира. Она проводится каждую осень и может длиться от одного дня до недели. Сегодня это
-                    отличная возможность приобрести даже самые люксовые продукты с огромной скидкой.</p>
+                <div class="bottom_left">&nbsp;</div>
 
-                <h3>Черная пятница 2020 когда?️</h3>
+                <div class="bottom_right">
+                    <p class="title">Розігруємо два Apple Watch Series 5</p>
 
-                <p>Ежегодно Блэк Фрайдей проходит в последнюю пятницу осени. В 2020 году распродажи начнутся 27
-                    ноября.</p>
+                    <p class="text">Хочеш новенький смарт-годинник перед Новим роком? На ізі!</p>
 
-                <h4>Когда &laquo;Черная пятница&raquo; 2020 начинается в PARFUMS?</h4>
+                    <p class="text">Зроби замовлення на суму від 800 грн в період з 18.12 по 27.12, і ти автоматично береш участь у розіграші 1 із 2 Apple Watch Series 5 grey aluminium. Ну клас же!</p>
 
-                <p>В PARFUMS Блекфрайдей также стартует 27 ноября, ровно в 00:00. И продлится целых три дня, аж до 29
-                    ноября. В этот период вы сможете выгодно приобрести все приглянувшиеся товары.</p>
-
-                <h4>Какие акции и скидки в Черную пятницу ждать?</h4>
-
-                <p>В 2020 Black Friday на сайте PARFUMS вас ждет до -80% на все топовые категории: &laquo;Парфюмерия&raquo;,
-                    &laquo;Макияж&raquo;, &laquo;Волосы&raquo;, &laquo;Уход за лицом&raquo;, &laquo;Все для дома&raquo;,
-                    &laquo;Детям и мамам&raquo;, &laquo;Дерматокосметика&raquo;, &laquo;Для тела&raquo;, &laquo;Мужчинам&raquo;,
-                    &laquo;Ногти&raquo;, &laquo;Салонная косметика&raquo;. В распродаже принимают участие крутые бренды.
-                    Еще мы постоянно совершенствуем интерфейс, чтобы вам было максимально удобно совершать покупки, а
-                    также подготовили гарантированные подарки.</p>
-            </div>
-
-            <div class="about_btn_row">
-                <div class="black_but_border">
-                    <button class="btn_black_qwe button" id="btn_more">Читать полностью</button>
-                </div>
+                    <p class="text">Нехай новорічне диво трапиться саме з тобою! ♡</p>
+                    <a class="showcase_link" href="https://parfums.ua/ua/promo/detail/rozygrysh-apple-watch-v-podarok">Деталі тут &gt;</a></div>
             </div>
         </div>
     </section>
-    <script type="text/javascript">
-        window.onload = function () {
-            openMore();
 
-            function openMore() {
-                const $btnMore = $('#btn_more');
-                const $shadow = $('.about_top .shadow');
-                const $aboutBottom = $('.about_bottom');
-                const $heightAbout = $('.about_top');
+    <section class="gifts">
+        <div class="gifts_wrapper wrap">
+            <h2 class="gifts_title">Чарівні подарунки</h2>
 
-                $aboutBottom.css('display', 'none');
-                $shadow.css('display', 'block');
+            <p class="gifts_subtitle">для незабутніх свят</p>
 
-                $btnMore.on('click', function () {
-                    $(this).text(function (i, text) {
-                        return text === "Читать полностью" ? "Свернуть" : "Читать полностью";
-                    })
-                    $heightAbout.toggleClass('about_height_qwe');
-                    $aboutBottom.slideToggle();
-                    $shadow.fadeToggle()
-                })
-            }
-        }
-    </script>
+            <ul class="gifts_list">
+                <li class="gifts_item"><a class="gift_link" href="https://parfums.ua/ua/markdowned/1/popularity_desc/20/pol=dlya_zhenshin">
+                    <div class="gifts_item_img">
+                        <div class="img_main"><img alt="gifts" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/forShe.png" /></div>
+                    </div>
+                    <span class="gift_for">Для неї</span> </a><a class="gifts_btn" href="https://parfums.ua/ua/markdowned/1/arrival_desc/20/price_to=300"><span>до 300 грн</span></a></li>
+                <li class="gifts_item"><a class="gift_link" href="https://parfums.ua/ua/markdowned/1/popularity_desc/20/pol=dlya_muzhchin">
+                    <div class="gifts_item_img">
+                        <div class="img_main mistletoe"><img alt="gifts" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/forHe.png" /></div>
+                    </div>
+                    <span class="gift_for">Для нього</span> </a><a class="gifts_btn" href="https://parfums.ua/ua/markdowned/1/discount_desc/20/price_to=500"><span>до 500 грн</span></a></li>
+                <li class="gifts_item"><a class="gift_link" href="https://parfums.ua/ua/markdowned/1/discount_desc/20/category=detyam_i_mamam">
+                    <div class="gifts_item_img">
+                        <div class="img_main"><img alt="gifts" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/mothers.png" /></div>
+                    </div>
+                    <span class="gift_for">Дітям і мамам</span> </a><a class="gifts_btn" href="https://parfums.ua/ua/markdowned/1/discount_desc/20/price_to=1000"><span>до 1000 грн</span></a></li>
+                <li class="gifts_item"><a class="gift_link" href="https://parfums.ua/ua/markdowned/1/popularity_desc/20/category=makiyazh,kosmetika_dlya_lica-price_to=500">
+                    <div class="gifts_item_img">
+                        <div class="img_main"><img alt="gifts" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/sisters.png" /></div>
+                    </div>
+                    <span class="gift_for">Для подруг і сестер</span> </a><a class="gifts_btn" href="https://parfums.ua/ua/markdowned/1/discount_desc/20/price_from=1000"><span>від 1000 грн</span></a></li>
+            </ul>
+
+            <ul class="gifts_btn_list_mob">
+                <li class="list_item"><a class="gifts_btn" href="https://parfums.ua/ua/markdowned/1/arrival_desc/20/price_to=300"><span>до 300 грн</span></a></li>
+                <li class="list_item"><a class="gifts_btn" href="https://parfums.ua/ua/markdowned/1/discount_desc/20/price_to=500"><span>до 500 грн</span></a></li>
+                <li class="list_item"><a class="gifts_btn" href="https://parfums.ua/ua/markdowned/1/discount_desc/20/price_to=1000"><span>до 1000 грн</span></a></li>
+                <li class="list_item"><a class="gifts_btn" href="https://parfums.ua/ua/markdowned/1/discount_desc/20/price_from=1000"><span>від 1000 грн</span></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="promo">
+        <div class="promo__wrapper wrap">
+            <div class="promo__title">Святкова магія вже тут</div>
+
+            <div class="promo__subtitle">Потіш себе красою</div>
+
+            <div class="promo__content"><a class="promo-cart promo-cart--big promo-cart--1" href="https://parfums.ua/ua/markdowned/1/popularity_desc/20/category=makiyazh"><span class="promo-cart__title">Для феєричного макіяжу</span> <span class="promo-cart__sale">-75% <span class="promo-cart__sub-text">до</span> </span></a><a class="promo-cart promo-cart--small promo-cart--2" href="https://parfums.ua/ua/markdowned/1/arrival_desc/20/category=kosmetika,kosmetika_dlya_tela,makiyazh,kosmetika_dlya_lica-vid_produkcii=nabor"><span class="promo-cart__title">Лімітовані святкові набори</span> <span class="promo-cart__sale">-60% <span class="promo-cart__sub-text">до</span> </span></a><a class="promo-cart promo-cart--small promo-cart--3" href="https://parfums.ua/ua/markdowned/1/popularity_desc/20/category=kosmetika_dlya_tela,kosmetika_dlya_lica-vid_produkcii=balzam_dlya_gub,loson_dlya_ruk,maslo_dlya_gub"><span class="promo-cart__title">Зволоження для рук і губ</span> <span class="promo-cart__sale">-60% <span class="promo-cart__sub-text">до</span> </span></a><a class="promo-cart promo-cart--small promo-cart--4" href="https://parfums.ua/ua/markdowned/1/arrival_desc/20/category=kosmetika"><span class="promo-cart__title">Зимовий догляд для волосся</span> <span class="promo-cart__sale">-65% <span class="promo-cart__sub-text">до</span> </span></a><a class="promo-cart promo-cart--big promo-cart--5" href="https://parfums.ua/ua/markdowned/1/popularity_desc/20/category=parfyumeriya"><span class="promo-cart__title">Парфуми, що закохують</span> <span class="promo-cart__sale">-70% <span class="promo-cart__sub-text">до</span> </span></a><a class="promo-cart promo-cart--small promo-cart--6" href="https://parfums.ua/ua/category/parfyumeriya-dlya-doma"><span class="promo-cart__title">Казкові аромати для дому</span> <span class="promo-cart__sale">-30% <span class="promo-cart__sub-text">до</span></span></a></div>
+        </div>
+    </section>
+
+    <section class="bestsellers">
+        <div class="bestsellers__wrapper wrap">
+            <div class="bestsellers__title">Легендарні бестселери 2020</div>
+
+            <div class="bestsellers__subtitle">Обирай найкраще</div>
+
+            <div class="bestsellers__slider js-bestsellers__slider"><a class="slider__slider-item slider-item" href="https://parfums.ua/ua/product/montblanc-explorer"><span class="slider-item__img-wrapper"><img alt="product-1" class="slider-item__img" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/montblanc_brand.png" /> </span><span class="slider-item__name">Montblanc</span> <span class="slider-item__description">Чоловічі парфуми Explorer</span> </a><a class="slider__slider-item slider-item" href="https://parfums.ua/ua/product/armani-in-love-with-you-freeze"><span class="slider-item__img-wrapper"><img alt="product-2" class="slider-item__img" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/giorgio-armani_brand1.png" /> </span><span class="slider-item__name">Giorgio Armani</span> <span class="slider-item__description">Жіночі парфуми In Love With You Freeze</span> </a><a class="slider__slider-item slider-item" href="https://parfums.ua/ua/product/champs-elysees?q=guerl"><span class="slider-item__img-wrapper"><img alt="product-3" class="slider-item__img" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/guerlain_brand.png" /> </span><span class="slider-item__name">Guerlain</span> <span class="slider-item__description">Жіночі парфуми Champs Elysees</span> </a><a class="slider__slider-item slider-item" href="https://parfums.ua/ua/product/uspokaivayushchiy-i-uvlagnyayushchiy-gel--s-aloe-holika-hollika-aloe-99%25-soothing-gel-"><span class="slider-item__img-wrapper"><img alt="product-4" class="slider-item__img" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/holika-hollika_brand.png" /> </span><span class="slider-item__name">Holika Hollika</span> <span class="slider-item__description">Заспокійливий і зволожувальний гель з алое Aloe 99%</span> </a><a class="slider__slider-item slider-item" href="https://parfums.ua/ua/product/sukhoy-shampun-batiste-dry-shampoo-original?q=bati"><span class="slider-item__img-wrapper"><img alt="product-5" class="slider-item__img" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/batiste_brand.png" /> </span><span class="slider-item__name">Batiste</span> <span class="slider-item__description">Сухий шампунь Dry Shampoo Original</span> </a><a class="slider__slider-item slider-item" href="https://parfums.ua/ua/product/brelil-numero-cream"><span class="slider-item__img-wrapper"><img alt="product-6" class="slider-item__img" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/brelil-professional_brand.png" /> </span><span class="slider-item__name">Brelil Professional</span> <span class="slider-item__description">Відновлювальна маска для волосся Numero Numero Total Repair Mask</span> </a><a class="slider__slider-item slider-item" href="https://parfums.ua/ua/product/syvorotka-gialuronovaya-elizavecca-hell-pore-control-hyaluronic-acid-97?q=eliza"><span class="slider-item__img-wrapper"><img alt="product-7" class="slider-item__img" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/elizavecca_brand.png" /> </span><span class="slider-item__name">Elizavecca</span> <span class="slider-item__description">Гіалуронова сироватка Hell-Pore Control Hyaluronic Acid 97%</span> </a><a class="slider__slider-item slider-item" href="https://parfums.ua/ua/product/pupa-luminys-satin-sheen-baked-powder"><span class="slider-item__img-wrapper"><img alt="product-8" class="slider-item__img" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/pupa_brand.png" /> </span><span class="slider-item__name">Pupa</span> <span class="slider-item__description">Пудра з ефектом шовку Luminys Satin Sheen Baked Powder</span> </a><a class="slider__slider-item slider-item" href="https://parfums.ua/ua/product/gel-dlya-stirki-detskogo-belya-frosch?skuId=432224"><span class="slider-item__img-wrapper"><img alt="product-9" class="slider-item__img" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/frosch_brand.png" /> </span><span class="slider-item__name">Frosch</span> <span class="slider-item__description">Гель для прання дитячої білизни Baby</span> </a><a class="slider__slider-item slider-item" href="https://parfums.ua/ua/product/elektricheskaya-zubnaya-shetka-s-futlyarom-oral-b-pro-750-crossaction-d16-513-ux-black"><span class="slider-item__img-wrapper"><img alt="product-10" class="slider-item__img" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/oral-b_brand.png" /> </span><span class="slider-item__name">Oral-B</span> <span class="slider-item__description">Електрична зубна щітка з футляром Pro 750 CrossAction D16.513.UX Black</span> </a><a class="slider__slider-item slider-item" href="https://parfums.ua/ua/product/ochishchayushchiy-gel-muss-dlya-zhirnoy-i-problemnoy-kozhi-la-roche-posay-effaclar-gel-moussant-puri?skuId=497709"><span class="slider-item__img-wrapper"><img alt="product-11" class="slider-item__img" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/la-roche-posay_brand.png" /> </span><span class="slider-item__name">La Roche-Posay</span> <span class="slider-item__description">Очищувальний гель-мус для жирної та проблемної шкіри Effaclar</span> </a><a class="slider__slider-item slider-item" href="https://parfums.ua/ua/product/uvlazhnyayushij-tonalnyj-krem-s-kollagenom-enough-collagen-moisture-foundation-spf15"><span class="slider-item__img-wrapper"><img alt="product-12" class="slider-item__img" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/enough_brand.png" /> </span><span class="slider-item__name">Enough</span> <span class="slider-item__description">Зволожувальний тональний крем з колагеном SPF 15</span></a></div>
+            <a class="bestsellers__btn" href="https://parfums.ua/ua/markdowned/1/popularity">Усі хіти року</a></div>
+    </section>
+
+    <section class="banner">
+        <div class="inner">&nbsp;</div>
+    </section>
+    <!--    <a href="https://parfums.ua/ua/promotions/dostavka-krasoti"></a>-->
+
+    <section class="brands">
+        <div class="brands_wrapper wrap">
+            <div class="brands_top">
+                <p class="brands_title">Спонсори новорічного настрою</p>
+
+                <p class="brands_subtitle">Дарують круті знижки та свою любов ♡</p>
+            </div>
+
+            <div class="brands_content">
+                <div class="row"><a class="item" href="https://parfums.ua/ua/brand/montale"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/montale.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/mancera-parfum"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/mancera.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/tiziana-terenzi"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/tiziana.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/chi"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/chi.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/moroccanoil"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/moroccanoil.png" /></a></div>
+
+                <div class="row"><a class="item" href="https://parfums.ua/ua/brand/elizavecca"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/elizavecca.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/weleda"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/weleda.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/brelil"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/brelil.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/clarins"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/clarins.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/bourjois"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/bourjois.png" /></a></div>
+
+                <div class="row"><a class="item" href="https://parfums.ua/ua/brand/nyx"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/nyx.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/hermes"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/hermes.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/artdeco"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/artdeco.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/pupa"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/pupa.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/chanel"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/chanel.png" /></a></div>
+            </div>
+
+            <div class="brands_content_mob">
+                <div class="row"><a class="item" href="https://parfums.ua/ua/brand/montale"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/montale.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/chi"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/chi.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/weleda"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/weleda.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/bourjois"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/bourjois.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/artdeco"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/artdeco.png" /></a></div>
+
+                <div class="row"><a class="item" href="https://parfums.ua/ua/brand/mancera-parfum"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/mancera.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/moroccanoil"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/moroccanoil.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/brelil"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/brelil.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/nyx"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/nyx.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/pupa"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/pupa.png" /></a></div>
+
+                <div class="row"><a class="item" href="https://parfums.ua/ua/brand/tiziana-terenzi"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/tiziana.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/elizavecca"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/elizavecca.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/clarins"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/clarins.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/hermes"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/hermes.png" /> </a><a class="item" href="https://parfums.ua/ua/brand/chanel"><img alt="brand" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/chanel.png" /></a></div>
+            </div>
+            <a class="brands_btn btn_type3" href="https://parfums.ua/ua/markdowned/1/discount"><span>Усі бренди</span></a></div>
+    </section>
+
+    <section class="maraphone">
+        <div class="maraphone_wrapper wrap">
+            <p class="maraphone_title">Долучайся до марафону бажань</p>
+
+            <p class="maraphone_subtitle">Виграй 1 із 3 святкових <span>б&rsquo;юті-боксів</span></p>
+
+            <div class="left">&nbsp;</div>
+
+            <div class="right">
+                <p class="text">Ми переконані, що всі-всі б&rsquo;юті-бажання мають здійснюватися. Тим паче у 2020.</p>
+
+                <p class="text">Тож наприкінці року час підбити підсумки і зізнатися собі, від яких б&rsquo;юті-задоволень довелось відмовитись. Що тобі ну дуууже кортіло купити, але не вдалося? Час розкрити всю правду!</p>
+
+                <p class="text">Заходь, коментуй, перемагай ♡</p>
+                <a class="maraphone_link" href="https://www.instagram.com/p/CJDPXmlB_cm/?igshid=qfw2n8zj2fdm">Детальніше &gt;</a>
+
+                <div class="subscribe_socials">
+                    <div class="text">І підпишись на наші соцмережі, звісно!</div>
+
+                    <div class="links"><a class="social_link face" href="https://www.facebook.com/PARFUMS.UA"><img alt="" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/facebook.svg" /></a><a class="social_link insta" href="https://instagram.com/parfumsua?igshid=qch679ee0xo7"><img alt="" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/insta.svg" /></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subscribe_mob">
+            <div class="subscribe_socials">
+                <div class="text">І підпишись на наші соцмережі, звісно!</div>
+
+                <div class="links"><a class="social_link face" href="https://www.facebook.com/PARFUMS.UA"><img alt="" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/facebook.svg" /></a><a class="social_link insta" href="https://instagram.com/parfumsua?igshid=qch679ee0xo7"><img alt="" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/insta.svg" /></a></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="happy">
+        <div class="happy__wrapper wrap">
+            <div class="happy__title">
+                <div><img alt="happy-img" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/happy-ua.png" /> <span>Нового року!</span></div>
+            </div>
+
+            <div class="happy__description">
+                <div><img alt="gift-img" src="https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/saint_nikolay/gift.png" />
+                    <div class="happy__subtitle happy__subtitle--mobile">Здійснюй свої мрії, крокуй до великих цілей і люби себе, бо ти заслуговуєш найкращого! ♡</div>
+                </div>
+
+                <div>
+                    <p><span>♡</span> Дякуємо, що ти з нами, незважаючи ні на що</p>
+
+                    <p><span>♡</span> Дякуємо, що відкриваєш світ краси на PARFUMS</p>
+
+                    <p><span>♡</span> Дякуємо за твою небайдужість та активність на сайті та в соцмережах</p>
+
+                    <p>Саме завдяки тобі ми стаємо кращими!</p>
+                </div>
+            </div>
+
+            <div class="happy__subtitle happy__subtitle--desktop">Здійснюй свої мрії, крокуй до великих цілей і люби себе, бо ти заслуговуєш найкращого! ♡</div>
+            <a class="btn_type3 happy__btn" href="https://parfums.ua/ua/markdowned/1/discount">На новорічний сейл</a></div>
+    </section>
 </div>
+<script type="text/javascript">
+    window.onload = function () {
+        $(".saint_nikolay2020").snowfall({
+            image: "https://cdn.parfums.ua/public/upload/newAdminUpload/Landing/NYvichy89/flake1.png",
+            minSize: 10,
+            maxSize: 32
+        });
+        $('.banner .inner').click(function(){
+            window.location.href='https://parfums.ua/ua/promotions/dostavka-krasoti';
+        });
 
-</body>
-</html>
+        $('.js-bestsellers__slider').slick(
+            {
+                dots: true,
+                arrows: true,
+                infinite: false,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            arrows: false
+                        }
+                    },
+                ]
+            }
+        );
+    }
+</script>
