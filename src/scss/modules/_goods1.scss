@@ -1,0 +1,139 @@
+.goods1 {
+  padding-bottom: 70px;
+  .goods_wrapper {
+    max-width: 931px;
+    margin: 0 auto;
+
+    .goods_title {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 40px;
+      text-align: center;
+      color: #FF7000;
+      margin: 0 0 16px 0;
+    }
+
+    .goods_list {
+      display: flex;
+      justify-content: space-between;
+
+      .goods_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        flex-basis: 320px;
+
+        &:not(:last-child) {
+          //margin-right: 1.8%;
+          margin-right: 30px;
+        }
+
+        .goods_item_img {
+          position: relative;
+
+          .img_main {
+            position: relative;
+            z-index: 1;
+          }
+        }
+
+        .goods_item_text {
+          max-width: 244px;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 22px;
+          text-align: center;
+          color: #612A12;
+          margin-top: 12px;
+        }
+      }
+    }
+
+    .goods_btn {
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .goods1 {
+
+    .goods_title {
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    .goods_list {
+      display: flex;
+      justify-content: space-between;
+
+      .goods_item {
+        width: 33.333%;
+
+        h3 {
+          font-size: 20px;
+          line-height: 24px;
+          min-height: 50px;
+        }
+
+        .goods_item_text {
+          font-size: 14px;
+          line-height: 17px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  .goods1 {
+
+    .goods_title {
+    }
+
+    .goods_list {
+
+      .goods_item {
+
+        h3 {
+          min-height: 72px;
+        }
+
+        .goods_item_text {
+
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .goods1 {
+    padding-bottom: 70px;
+    .goods_wrapper {
+      .goods_list {
+        display: block;
+        max-width: 286px;
+        margin: 0 auto;
+
+        .goods_item {
+          margin-top: 30px;
+          width: 100%;
+
+          .goods_item_img {
+          }
+
+          .goods_item_text {
+
+          }
+        }
+      }
+    }
+
+  }
+}

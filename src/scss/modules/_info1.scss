@@ -1,0 +1,149 @@
+.info1 {
+  margin-bottom: 50px;
+
+  .info_wrapper {
+    position: relative;
+    background: url("/assets/img/info/info1_bg_desk.png") center top no-repeat;
+    background-size: cover;
+    height: 499px;
+    padding: 100px 0 0px;
+    overflow: hidden;
+    box-sizing: border-box;
+    max-width: 1300px;
+    margin: 0 auto;
+
+    .right {
+      max-width: 450px;
+      float: right;
+      margin-right: 10%;
+
+      .info_sponsor{
+        span{
+          display: inline-block;
+          margin-top: 9px;
+          margin-bottom: 27px;
+        }
+      }
+
+      .info_title {
+        max-width: 400px;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 120%;
+        color: $white;
+        margin-bottom: 10px;
+      }
+
+      .text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 140%;
+
+        color: #612A12;
+
+        strong {
+          font-weight: 700;
+        }
+
+        &:not(:last-of-type) {
+          margin-bottom: 20px;
+        }
+
+        &:last-of-type {
+          margin-bottom: 30px;
+        }
+      }
+
+      .info_link {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+        text-decoration-line: underline;
+        color: #612A12;
+        cursor: pointer;
+        transition: color 0.3s;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .subscribe_mob {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .info1 {
+
+    .info_wrapper {
+      max-width: 1024px;
+      height: 393px;
+      padding: 85px 0 0;
+      .right{
+        .info_sponsor{
+          span{
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .info1 {
+
+    .info_wrapper {
+      max-width: 930px;
+      height: 357px;
+      padding: 60px 0 0;
+      .right{
+        max-width: 400px;
+        margin-right: 5%;
+      };
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .info1 {
+    margin: 0;
+    .info_wrapper {
+      background: url("/assets/img/info/info1_bg_mob.png") center top no-repeat;
+      background-size: cover;
+      padding: 30px 0;
+      height: 722px;
+      box-sizing: border-box;
+
+      .right {
+        max-width: 288px;
+        float: none;
+        margin-right: auto;
+        margin: 0 auto;
+        .info_sponsor{
+          span{
+            margin-bottom: 23px;
+          }
+        }
+        .info_title {
+          font-size: 20px;
+          line-height: 24px;
+          margin-bottom: 10px;
+        }
+
+        .text {
+          &:not(:last-of-type) {
+            margin-bottom: 20px;
+          }
+
+          &:last-of-type {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}

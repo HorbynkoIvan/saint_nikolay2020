@@ -26,9 +26,11 @@ body {
 	margin-right: auto;
 	overflow: hidden;
 }
-
-.saint_nikolay2020.container *{
-	font-family: $font-main !important;
+.baby_day{
+	background: #fff4d5;
+}
+.baby_day .container *{
+	font-family: "Montserrat" !important;
 }
 
 .img-wr {
@@ -60,7 +62,7 @@ img{
 
 .wrap {
 	//@include min-max(320px, 1600px, 18%);
-	@include min-max(320px, 1024px, 0);
+	@include min-max(320px, 1300px, 0);
 }
 
 ol{
